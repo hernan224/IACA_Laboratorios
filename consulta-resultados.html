@@ -9,8 +9,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <!--<link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
-        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">-->
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -61,9 +60,9 @@
                             </a>
 
                             <ul class="list-unstyled dropdown">
-                                <li><a href="#"><strong>Ingreso de Muestras</strong></a></li>
-                                <li><a href="#"><strong>Muestras Veterinarias</strong></a></li>
-                                <li><a href="#"><strong>Consulta de Resultados</strong></a></li>
+                                <li><a href="carga-muestra.html"><strong>Ingreso de Muestras</strong></a></li>
+                                <li><a href="carga-veterinario.html"><strong>Muestras Veterinarias</strong></a></li>
+                                <li><a href="consulta-resultados.html"><strong>Consulta de Resultados</strong></a></li>
                                 <li><a href="#"><i class="fa fa-lg fa-sign-out texto-azul">&nbsp;&nbsp;</i><strong class="texto-azul">Cerrar Sesión</strong></a></li>
                             </ul>
 
@@ -133,7 +132,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="">Inicio</a>
+                        <a class="breadcrumb--link" href="/">Inicio</a>
 
                         <span class="breadcrumb--no_link">Consulta de Resultados</span>
                     </div> <!--/.breadcrumb-->
@@ -1685,18 +1684,19 @@
 
                 <div class="col-md-5 certificaciones--footer">
 
-                        <div class="contenedor-con-punta">
-                            <p class="h4">Certificaciones</p>
-                            <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                <svg class="svg-down punta--celeste" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                            </div></div> <!--/.outter-svg-container-->
-                        </div> <!--/.contenedor-con-punta-->
+                    <div class="contenedor-con-punta">
+                        <p class="h4">Certificaciones</p>
+                        <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                            <svg class="svg-down punta--celeste" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                        </div></div> <!--/.outter-svg-container-->
+                    </div> <!--/.contenedor-con-punta-->
+
+                    <img class="iconos_certificaciones" src="img/iconos_certficaciones--test.png" alt="test"/>
 
                 </div><!--/.certificaciones--footer-->
 
 
             </footer>
-
 
         </div> <!--/.container-->
 
@@ -1705,37 +1705,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
         <script src="js/main.js"></script>
-        <script>
-            $(document).ready(function() {
 
-                var $carrusel = $("#owl-san_martin");
-
-                $carrusel.owlCarousel({
-                    singleItem : true,
-                    autoPlay: 3500,
-                    navigation : false, // Show next and prev buttons
-                    slideSpeed : 900,
-                    paginationSpeed : 650,
-                    stopOnHover:true,
-                    afterInit: afterOWLinit
-                });
-
-                function afterOWLinit() {
-                    $('.owl-controls').appendTo('.slider-control');
-                    $(".slider_next").click(function(event){
-                        event.preventDefault();
-                        $carrusel.trigger('owl.next');
-                    })
-                    $(".slider_prev").click(function(event){
-                        event.preventDefault();
-                        $carrusel.trigger('owl.prev');
-                    })
-                }
-
-            });
-        </script>
 
     </body>
 </html>

@@ -3634,9 +3634,12 @@ form option {
   margin-top: 0;
 }
 
-.front_page .banner--app_movil .header--banner,
-.front_page .banner--app_movil .contenido--banner {
+.front_page .banner--app_movil .header--banner {
   width: 50%;
+}
+
+.front_page .banner--app_movil .contenido--banner {
+  width: 47%;
 }
 
 .front_page .banner--app_movil i.fa {
@@ -3744,6 +3747,13 @@ footer {
   line-height: 48px;
   line-height: 3rem;
   margin: 0;
+}
+
+.certificaciones--footer img.iconos_certificaciones {
+  display: block;
+  position: relative;
+  margin: 48px auto 0;
+  margin: 3rem auto 0;
 }
 
 /****************************************************

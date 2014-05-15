@@ -1517,9 +1517,11 @@ form{
   }
 
   .banner--app_movil{
-    .header--banner,
-    .contenido--banner{
+    .header--banner{
       width: 50%;
+    }
+    .contenido--banner{
+      width: 47%;
     }
 
     i.fa{
@@ -1642,11 +1644,12 @@ footer{
     margin: 0;
   }
 
-  .iconos_certificaciones{
+  img.iconos_certificaciones{
     display: block;
     position: relative;
-    @include x-rem(3 auto 0);
+    @include x-rem(margin, 3 auto 0);
   }
+
 }
 
 
