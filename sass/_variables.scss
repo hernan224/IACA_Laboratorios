@@ -214,24 +214,24 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 //## Define alert colors, border radius, and padding.
 
 $alert-padding:               15px !default;
-//$alert-border-radius:         $border-radius-base !default;
+$alert-border-radius:         0 !default;
 $alert-link-font-weight:      bold !default;
 
-$alert-success-bg:            $state-success-bg !default;
-$alert-success-text:          $state-success-text !default;
-//$alert-success-border:        $state-success-border !default;
+$alert-success-bg:            $primario-celeste !default;
+$alert-success-text:          $alt-negro !default;
+$alert-success-border:        transparent !default;
 
 $alert-info-bg:               $state-info-bg !default;
 $alert-info-text:             $state-info-text !default;
-//$alert-info-border:           $state-info-border !default;
+$alert-info-border:           $state-info-border !default;
 
-$alert-warning-bg:            $state-warning-bg !default;
-$alert-warning-text:          $state-warning-text !default;
-//$alert-warning-border:        $state-warning-border !default;
+$alert-warning-bg:            $primario-violeta_oscuro !default;
+$alert-warning-text:          $alt-blanco !default;
+$alert-warning-border:        transparent !default;
 
 $alert-danger-bg:             $state-danger-bg !default;
 $alert-danger-text:           $state-danger-text !default;
-//$alert-danger-border:         $state-danger-border !default;
+$alert-danger-border:         $state-danger-border !default;
 
 
 //== Close

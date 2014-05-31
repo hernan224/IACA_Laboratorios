@@ -9,13 +9,22 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
+        <!--<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />-->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
@@ -49,8 +58,8 @@
                             <a class="hidden-xs" href="#"><i class="fa fa-lg fa-linkedin"></i> </a>
                         </li>
 
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="#"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="#"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="acceso_paciente.html"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="acceso_profesional.html"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
                     </ul>
 
 
@@ -63,13 +72,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -115,7 +124,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="/">Inicio</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
 
                         <span class="breadcrumb--no_link">Contacto</span>
                     </div> <!--/.breadcrumb-->
@@ -124,14 +133,20 @@
             </header>
 
 
-            <main>
+            <main class="max_480">
 
                 <h1 class="texto-azul">Contacto</h1>
 
                 <div class="row" id="mapa-contacto">
                     <div class="col-sm-12">
 
-                        <div class="info-contacto">
+                        <div class="mapa-contacto">
+                            <div class="flex-video">
+                                <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zLkoIiTf_DZ8.kwVC1peoG-yk" width="1200" height="650"></iframe>
+                            </div>
+                        </div> <!--/.mapa-contacto-->
+
+                        <div class="info-contacto visible-xs">
                             <div class="contenedor-con-punta contenedor--azul">
                                 <p class="h3 texto-invertido">Sede San Martín</p>
 
@@ -171,15 +186,9 @@
                             </div><!--/.contenedor-con-punta-->
                         </div> <!--/.info-contacto-->
 
-                        <div class="mapa-contacto">
-                            <div class="flex-video">
-                                <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zLkoIiTf_DZ8.kwVC1peoG-yk" width="750" height="720"></iframe>
-                            </div>
-                        </div> <!--/.mapa-contacto-->
-
                     </div>
 
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-md-6 hidden-sm hidden-xs">
                         <div class="banner banner-horizontal contenedor--blanco">
                             <div class="header--banner contenedor--azul contenedor-con-punta">
                                 <p class="h4 texto-invertido">Sede C.A.B.A.</p>
@@ -201,7 +210,7 @@
                         </div> <!--/.banner-horizontal-->
                     </div>
                     
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-md-6 hidden-sm hidden-xs">
                         <div class="banner banner-horizontal contenedor--gris_claro">
                             <div class="header--banner contenedor--violeta contenedor-con-punta">
                                 <p class="h4 texto-invertido">Sede Mar del Plata</p>
@@ -221,6 +230,55 @@
                         </div>
                     </div>
 
+                    <div class="col-sm-6 col-xs-12 visible-xs visible-sm">
+                        <div class="banner banner--vertical contenedor--blanco">
+                            <div class="header--banner contenedor--azul contenedor-con-punta">
+
+                                <p class="h4 texto-invertido">Sede C.A.B.A.</p>
+
+                                <p class="texto-invertido">Ciudad de Buenos Aires</p>
+
+                                <div class="outter-svg-container punta--down">
+                                    <div class="inner-svg-container">
+                                        <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                    </div>
+                                </div>
+                                <!--/.outter-svg-container-->
+                            </div>
+                            <div class="contenido--banner">
+                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i> +54-011-4371-0046</p>
+
+                                <p><i class="fa fa-mobile texto-azul">&nbsp;&nbsp;</i> 011-154-061-5081</p>
+
+                                <p><i class="fa fa-envelope-o texto-azul">&nbsp;&nbsp;</i> buenosaires@iaca.com.ar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 visible-xs visible-sm">
+                        <div class="banner banner--vertical contenedor--gris_claro">
+                            <div class="header--banner contenedor--violeta contenedor-con-punta">
+
+                                <p class="h4 texto-invertido">Sede Mar del Plata</p>
+
+                                <p class="texto-invertido">Nodo Logístico</p>
+
+                                <div class="outter-svg-container punta--down">
+                                    <div class="inner-svg-container">
+                                        <svg class="svg-down punta--violeta" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                    </div>
+                                </div>
+                                <!--/.outter-svg-container-->
+                            </div>
+                            <div class="contenido--banner">
+                                <p><i class="fa fa-mobile texto-azul">&nbsp;&nbsp;</i> 0223-15-424-9300</p>
+
+                                <p><i class="fa fa-envelope-o texto-azul">&nbsp;&nbsp;</i> mardelplata@iaca.com.ar</p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div> <!--/#mapa-contacto-->
 
                 <div id="reclamos-sugerencias" class="row">
@@ -233,6 +291,13 @@
                         <form id="reclamos" action="">
 
                             <ul class="list-unstyled row">
+
+                                <li class="col-xs-12 col-md-9 col-md-offset-2 mensaje--alerta">
+                                    <div class="alert alert-warning alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        <p>Mensaje de alerta / error</p>
+                                    </div>
+                                </li> <!--/.mensaje--alerta-->
 
                                 <li class="col-xs-12">
                                     <label class="contenedor-con-punta" for="nombre--sugerencias">
@@ -285,9 +350,22 @@
                                     <textarea name="mensaje" id="mensaje--sugerencias"  rows="5" placeholder="Mensaje" title="Mensaje" required></textarea>
                                 </li> <!--/.comentarios-->
 
-                                <li class="col-xs-12">
-                                    <input class="boton--enviar" type="submit" value="Enviar"/>
-                                    <input class="boton--cancelar" type="button" value="Cancelar"/>
+                                <li class="col-xs-12 col-md-9 col-md-offset-2 mensaje--satisfactorio">
+                                    <div class="alert alert-success alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        <p>Mensaje satisfactorio</p>
+                                    </div>
+                                </li> <!--/.mensaje--satisfactorio-->
+
+                                <li class="col-xs-12 hidden-xs">
+                                    <div class="centrador">
+                                        <input class="boton--enviar" type="submit" value="Enviar"/>
+                                         <input class="boton--cancelar" type="button" value="Cancelar"/>
+                                    </div>
+                                </li> <!--botones-->
+
+                                <li class="col-xs-12 visible-xs">
+                                    <input class="boton--enviar boton_centrado" type="submit" value="Enviar"/>
                                 </li> <!--botones-->
 
                             </ul>
@@ -297,8 +375,8 @@
 
                     <div class="col-sm-5 col-md-4">
                         <a href="profesionales.html">
-                            <div class="banner banner--vertical">
-                                <figure class="img--banner"><img src="img/banner_vertical--foto_test-1.jpg" alt=""/></figure>
+                            <div class="banner banner--vertical banner--max_360">
+                                <figure class="img--banner"><img src="img/banner_vertical--staff_profesional.jpg" alt=""/></figure>
                                 <div class="texto--banner contenedor-con-punta contenedor--celeste">
                                     <p class="h5 texto-negro"><i class="fa fa-caret-right">&nbsp;&nbsp;</i>Contactar al
                                         personal profesional de IACA Laboratorios</p>
@@ -341,6 +419,13 @@
                         <form id="curriculum" action="">
 
                             <ul class="list-unstyled row">
+
+                                <li class="col-xs-12 col-md-10 col-md-offset-2 mensaje--alerta">
+                                    <div class="alert alert-warning alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        <p>Mensaje de alerta / error</p>
+                                    </div>
+                                </li> <!--/.mensaje--alerta-->
 
                                 <li class="col-xs-12">
                                     <label class="contenedor-con-punta" for="nombre--trabajo">
@@ -393,9 +478,22 @@
                                     <input id="file--trabajo" name="file" type="file" placeholder="Cargar CV" title="Cargar CV" required/>
                                 </li> <!--file-->
 
-                                <li class="col-xs-12">
-                                    <input class="boton--enviar" type="submit" value="Enviar"/>
-                                    <input class="boton--cancelar" type="button" value="Cancelar"/>
+                                <li class="col-xs-12 col-md-10 col-md-offset-2 mensaje--alerta">
+                                    <div class="alert alert-success alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        <p>Mensaje satisfactorio</p>
+                                    </div>
+                                </li> <!--/.mensaje--alerta-->
+
+                                <li class="col-xs-12 hidden-xs">
+                                    <div class="centrador">
+                                        <input class="boton--enviar" type="submit" value="Enviar"/>
+                                        <input class="boton--cancelar" type="button" value="Cancelar"/>
+                                    </div>
+                                </li> <!--botones-->
+
+                                <li class="col-xs-12 visible-xs">
+                                    <input class="boton--enviar boton_centrado" type="submit" value="Enviar"/>
                                 </li> <!--botones-->
 
                             </ul>
@@ -444,6 +542,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <!--<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>-->
 
     </body>
 </html>

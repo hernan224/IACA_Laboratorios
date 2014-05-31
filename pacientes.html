@@ -11,13 +11,21 @@
 
         <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
-        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
@@ -51,8 +59,8 @@
                             <a class="hidden-xs" href="#"><i class="fa fa-lg fa-linkedin"></i> </a>
                         </li>
 
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="#"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="#"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="acceso_paciente.html"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="acceso_profesional.html"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
                     </ul>
 
 
@@ -65,13 +73,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -117,7 +125,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="/">Inicio</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
                         <span class="breadcrumb--no_link">Pacientes</span>
                     </div> <!--/.breadcrumb-->
                 </div>
@@ -125,12 +133,12 @@
             </header>
 
 
-            <main class="pacientes">
+            <main class="pacientes max_480">
 
                 <h1 class="texto-azul">Servicios al paciente</h1>
 
                 <div class="row">
-                    <div class="col-md-7 carrusel">
+                    <div class="col-sm-7 carrusel">
 
                         <div class="contenedor-slider">
                             <ul id="owl-pacientes" class="list-unstyled owl-carousel">
@@ -153,7 +161,7 @@
                     </div>
 
 
-                    <div class="col-md-5">
+                    <div class="col-sm-5 pacientes--intro">
                         <p class="parrafo-destacado">El confort, la comodidad y eficacia en la atención de pacientes y
                             clientes, son premisas fundamentales en nuestra organización.</p>
                         <p class="parrafo-destacado">Para ello contamos con:</p>
@@ -169,7 +177,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-sm-8">
                         <h2 id="informe_resultados" class="texto-azul">Informe de resultado de análisis</h2>
 
                         <p>En el momento de ingreso de sus datos usted puede solicitar:</p>
@@ -186,15 +194,15 @@
                             Nuestro personal lo informará sobre indicaciones para los análisis y hora de atención en domicilio.</br>
                             Las extracciones se realizan a partir de las 7.00 hs.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
 
                         <a href="#">
-                            <div class="banner banner--vertical resultado-movil">
+                            <div class="banner banner--vertical banner--max_360 resultado-movil">
                                 <div class="header--banner contenedor--violeta_oscuro contenedor-con-punta">
                                     <p class="h5  texto-invertido">Consulte los resultados en su dispositivo móvil</p>
-                                    <i class="texto-invertido fa fa-3x fa-android"></i>
-                                    <i class="texto-invertido fa fa-3x fa-apple"></i>
-                                    <i class="texto-invertido fa fa-3x fa-windows"></i>
+                                    <i class="texto-invertido fa fa-3x fa-android">&nbsp;&nbsp;</i>
+                                    <i class="texto-invertido fa fa-3x fa-apple">&nbsp;&nbsp;</i>
+                                    <i class="texto-invertido fa fa-3x fa-windows">&nbsp;&nbsp;</i>
                                     <!--<i class="fa fa-3x"></i>-->
 
 
@@ -276,9 +284,9 @@
 
 
                         <div class="row">
-                            <h2 id="atencion_ninos" class="texto-azul">Atención a niños</h2>
+                            <div class="col-xs-12"><h2 id="atencion_ninos" class="texto-azul">Atención a niños</h2></div>
 
-                            <div class="col-md-5">
+                            <div class="col-md-5 hidden-xs hidden-sm">
                                 <figure><img src="img/img-atencion_ninos.jpg" alt="Atencion a niños"/></figure>
                             </div>
                             <div class="col-md-7">
@@ -303,8 +311,9 @@
                     </div>
 
                     <div class="col-md-3 col-sm-4">
+
                         <a href="indicaciones.html">
-                            <div class="banner banner--vertical">
+                            <div class="banner banner--vertical banner--max_360">
                                 <div class="texto--banner contenedor--celeste contenedor-con-punta">
                                     <p class="h5 texto-negro"><i class="fa fa-caret-right texto-invertido">&nbsp;&nbsp;</i>Indicaciones
                                         e Instrucciones para Análisis</p>
@@ -316,12 +325,12 @@
                                     </div>
                                     <!--/.outter-svg-container-->
                                 </div>
-                                <figure class="img--banner"><img src="img/banner_vertical--foto_test-1.jpg" alt=""/></figure>
+                                <figure class="img--banner"><img src="img/banner_vertical--instrucciones_analisis.jpg" alt=""/></figure>
                             </div>
                         </a> <!--/.banner--vertical-->
 
-                        <div class="banner banner--vertical atencion-paciente">
-                            <figure class="img--banner"><img src="img/img-profesionales.jpg" alt=""/></figure>
+                        <div class="banner banner--vertical banner--max_360 atencion-paciente">
+                            <figure class="img--banner"><img src="img/atencion_telefonica.jpg" alt=""/></figure>
                             <div class="texto--banner contenedor-con-punta contenedor--azul_oscuro">
                                 
                                 <p class="h5 texto-invertido">Atención al paciente</p>
@@ -359,9 +368,6 @@
 
                     </div>
                 </div>
-
-
-
 
             </main>
 

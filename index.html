@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
+   <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
@@ -11,13 +11,21 @@
 
         <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
-        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
@@ -131,18 +139,10 @@
                     </nav> <!--/menu-principal-->
                 </div>
 
-                <!--<div class="col-xs-12">
-                    <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="">Inicio</a>
-                        <a class="breadcrumb--link" href="">La empresa</a>
-                        <span class="breadcrumb--no_link">Sede Darwin</span>
-                    </div> &lt;!&ndash;/.breadcrumb&ndash;&gt;
-                </div>-->
-
             </header>
 
 
-            <main class="front_page">
+            <main class="front_page max_480">
 
                 <div class="row primera_seccion">
 
@@ -178,6 +178,12 @@
                                 <form id="buscar_practica" action="">
                                     <ul class="list-unstyled">
 
+                                        <!--<li class="busqueda_practica busqueda_inline">
+                                            <label for="practica_search">Buscar Práctica</label>
+                                            <input id="practica_search" name="s" type="text" placeholder="Buscar Práctica" title="s" />
+                                            <input class="boton--enviar" type="submit" value=""/>
+                                        </li>-->
+
                                         <li class="busqueda_practica">
                                             <label for="practica_search">Buscar Práctica</label>
                                             <input id="practica_search" name="s" type="text" placeholder="Buscar Práctica" title="s" />
@@ -196,33 +202,7 @@
                                             </select>
                                         </li>
 
-                                        <!--<li class="busqueda_especialidad">
-                                            <label for="especialidad_search">Seleccionar Especialidad</label>
-                                            <select name="especialidad_search" id="especialidad_search">
-                                                <option label="Autoinmunidad" value="14">Autoinmunidad</option>
-                                                <option label="Bacteriología" value="22">Bacteriología</option>
-                                                <option label="Biología Molecular" value="9">Biología Molecular</option>
-                                                <option label="Bioquímica Clínica" value="3">Bioquímica Clínica</option>
-                                                <option label="Citogenética" value="20">Citogenética</option>
-                                                <option label="Drogas de abuso" value="21">Drogas de abuso</option>
-                                                <option label="Drogas terapéuticas" value="13">Drogas terapéuticas</option>
-                                                <option label="Endocrinología" value="5">Endocrinología</option>
-                                                <option label="Hematología" value="12">Hematología</option>
-                                                <option label="Hemostasia" value="8">Hemostasia</option>
-                                                <option label="Histocompatibilidad" value="29">Histocompatibilidad</option>
-                                                <option label="Inmunología" value="7">Inmunología</option>
-                                                <option label="Metabolismo óseo" value="18">Metabolismo óseo</option>
-                                                <option label="M.oncológicos" value="10">M.oncológicos</option>
-                                                <option label="Neurobioquímica" value="1">Neurobioquímica</option>
-                                                <option label="Oligoelementos" value="15">Oligoelementos</option>
-                                                <option label="Serología" value="6">Serología</option>
-                                                <option label="Toxicología" value="2">Toxicología</option>
-                                                <option label="Vitaminas" value="16">Vitaminas</option>
-                                                <option label="Seleccione una especialidad" value="-1" selected="selected">Seleccione una especialidad</option>
-                                            </select>
-                                        </li>-->
-
-                                        <!--<li><input class="boton--enviar" type="submit" value="Buscar"/></li>-->
+                                        <li><input class="boton--enviar" type="submit" value="Buscar"/></li>
 
                                         <li class="busqueda_alfabetica hidden-xs">
                                             <p>Búsqueda alfabética</p>
@@ -235,7 +215,7 @@
                                                 <a href="#">o</a><a href="#">p</a><a href="#">q</a><a href="#">r</a>
                                                 <a href="#">s</a><a href="#">t</a><a href="#">u</a><a href="#">v</a>
                                                 <a href="#">w</a><a href="#">x</a><a href="#">y</a><a href="#">z</a>
-                                                <a class="mas-recientes" href="#">Más recientes</a>
+                                                <!--<a class="mas-recientes" href="#">Más recientes</a>-->
                                             </div>
                                         </li>
                                     </ul>
@@ -279,48 +259,9 @@
                                             </select>
                                         </li>
 
-                                        <!--<li class="busqueda_especialidad">
-                                            <label for="especialidad_search">Seleccionar Especialidad</label>
-                                            <select name="especialidad_search" id="especialidad_search">
-                                                <option label="Autoinmunidad" value="14">Autoinmunidad</option>
-                                                <option label="Bacteriología" value="22">Bacteriología</option>
-                                                <option label="Biología Molecular" value="9">Biología Molecular</option>
-                                                <option label="Bioquímica Clínica" value="3">Bioquímica Clínica</option>
-                                                <option label="Citogenética" value="20">Citogenética</option>
-                                                <option label="Drogas de abuso" value="21">Drogas de abuso</option>
-                                                <option label="Drogas terapéuticas" value="13">Drogas terapéuticas</option>
-                                                <option label="Endocrinología" value="5">Endocrinología</option>
-                                                <option label="Hematología" value="12">Hematología</option>
-                                                <option label="Hemostasia" value="8">Hemostasia</option>
-                                                <option label="Histocompatibilidad" value="29">Histocompatibilidad</option>
-                                                <option label="Inmunología" value="7">Inmunología</option>
-                                                <option label="Metabolismo óseo" value="18">Metabolismo óseo</option>
-                                                <option label="M.oncológicos" value="10">M.oncológicos</option>
-                                                <option label="Neurobioquímica" value="1">Neurobioquímica</option>
-                                                <option label="Oligoelementos" value="15">Oligoelementos</option>
-                                                <option label="Serología" value="6">Serología</option>
-                                                <option label="Toxicología" value="2">Toxicología</option>
-                                                <option label="Vitaminas" value="16">Vitaminas</option>
-                                                <option label="Seleccione una especialidad" value="-1" selected="selected">Seleccione una especialidad</option>
-                                            </select>
-                                        </li>-->
 
                                          <li><input class="boton--enviar" type="submit" value="Buscar"/></li>
 
-                                        <!--<li class="busqueda_alfabetica hidden-xs">
-                                            <p>Búsqueda alfabética</p>
-
-                                            <div class="lista_letras">
-                                                <a href="#">#</a><a href="#">a</a><a href="#">b</a><a href="#">c</a>
-                                                <a href="#">d</a><a href="#">e</a><a href="#">f</a><a href="#">g</a>
-                                                <a href="#">h</a><a href="#">i</a><a href="#">j</a><a href="#">k</a>
-                                                <a href="#">l</a><a href="#">m</a><a href="#">n</a><a href="#">ñ</a>
-                                                <a href="#">o</a><a href="#">p</a><a href="#">q</a><a href="#">r</a>
-                                                <a href="#">s</a><a href="#">t</a><a href="#">u</a><a href="#">v</a>
-                                                <a href="#">w</a><a href="#">x</a><a href="#">y</a><a href="#">z</a>
-                                                <a class="mas-recientes" href="#">Más recientes</a>
-                                            </div>
-                                        </li>-->
                                     </ul>
                                 </form> <!--/.buscar-practica  movil-->
                             </div>
@@ -331,7 +272,7 @@
 
                         <div class="row hidden-sm hidden-xs">
                             <div class="col-sm-6">
-                                <a href="indicaciones.html.html">
+                                <a href="indicaciones.html">
                                     <div class="banner banner--vertical contenedor--celeste">
                                         <div class="texto--banner contenedor-con-punta">
                                             <p class="h5 texto-negro"><i class="fa fa-caret-right texto-invertido">&nbsp;&nbsp;</i>Indicaciones e Instrucciones para análisis</p>
@@ -343,7 +284,7 @@
                                             </div>
                                             <!--/.outter-svg-container-->
                                         </div>
-                                        <figure class="img--banner"><img src="img/banner_vertical--foto_test-1.jpg" alt=""/></figure>
+                                        <figure class="img--banner"><img src="img/banner_vertical--instrucciones_analisis.jpg" alt="Indicaciones para analisis"/></figure>
                                     </div>
                                 </a> <!--/.banner-vertical-->
                             </div> <!--/ indicaciones para analisis-->
@@ -351,8 +292,8 @@
                             <div class="col-sm-6">
                                 <a href="programas_externos.html">
                                     <div class="banner banner--vertical contenedor--azul">
-                                        <figure class="img--banner"><img src="img/banner_vertical--foto_test-1.jpg"
-                                                                         alt=""/></figure>
+                                        <figure class="img--banner"><img src="img/banner_vertical--programas_externos.jpg"
+                                                                         alt="Programas externos"/></figure>
                                         <div class="texto--banner contenedor-con-punta">
                                             <p class="h5 texto-invertido"><i class="fa fa-caret-right texto-negro">
                                                 &nbsp;&nbsp;</i>Programas de Evaluación Externos de la Calidad</p>
@@ -386,14 +327,14 @@
                                     </div>
                                 </div>
 
-                                <figure class="img--banner pull-right"><img src="img/banner_horizontal--foto_test-1.jpg" alt=""/></figure>
+                                <figure class="img--banner pull-right"><img src="img/banner_horizontal--sede_san-martin.jpg" alt=""/></figure>
 
                             </div>
                         </a> <!--/.banner  sede san martin-->
 
                         <a href="labo-darwin.html">
                             <div class="banner banner-horizontal contenedor--violeta">
-                                <figure class="img--banner pull-left"><img src="img/banner_horizontal--foto_test-1.jpg" alt=""/></figure>
+                                <figure class="img--banner pull-left"><img src="img/banner_horizontal--sede_darwin.jpg" alt=""/></figure>
 
                                 <div class="banner-inner-container">
                                     <div class="texto--banner contenedor-con-punta contenedor--violeta pull-right">
@@ -435,7 +376,7 @@
                                     </div>
                                 </div>
 
-                                <figure class="img--banner pull-right"><img src="img/banner_horizontal--foto_test-1.jpg" alt=""/></figure>
+                                <figure class="img--banner pull-right"><img src="img/banner_horizontal--sede_rodriguez.jpg" alt=""/></figure>
                             </div>
                         </a> <!--/.banner  sede rodriguez-->
 
@@ -444,12 +385,12 @@
 
                     <div class="col-sm-6">
 
-                        <a href="#">
+                        <a href="acceso_paciente.html">
                             <div class="banner banner-horizontal contenedor--blanco">
                                 <div class="header--banner contenedor--azul contenedor-con-punta">
                                     <p class="h5 texto-invertido">Acceso para pacientes</p>
 
-                                    <p class="texto-invertido hidden-sm hidden-xs">Consulte el resultado de sis análisis
+                                    <p class="texto-invertido hidden-sm hidden-xs">Consulte el resultado de sus análisis
                                         accediendo desde acá.</p>
 
                                     <div class="outter-svg-container punta--right">
@@ -470,9 +411,11 @@
                             <div class="banner banner-horizontal banner--app_movil contenedor--gris_claro">
 
                                 <div class="contenido--banner">
-                                    <i class="texto-violeta_oscuro fa fa-3x fa-android"></i>
-                                    <i class="texto-violeta_oscuro fa fa-3x fa-apple"></i>
-                                    <i class="texto-violeta_oscuro fa fa-3x fa-windows"></i>
+                                    <i class="hidden-xs texto-violeta_oscuro fa fa-3x fa-android"></i>
+                                    <i class="hidden-xs texto-violeta_oscuro fa fa-3x fa-apple"></i>
+                                    <i class="hidden-xs texto-violeta_oscuro fa fa-3x fa-windows"></i>
+
+                                    <i class="visible-xs texto-violeta_oscuro fa fa-4x fa-android"></i>
 
                                 </div>
 
@@ -491,7 +434,7 @@
                             </div>
                         </a> <!--/.banner-horizontal aplicación movil-->
 
-                        <a href="#">
+                        <a href="acceso_profesional.html">
                             <div class="banner banner-horizontal contenedor--blanco">
                                 <div class="header--banner contenedor--azul_oscuro contenedor-con-punta">
                                     <p class="h5 texto-invertido">Acceso para Profesionales</p>
@@ -604,8 +547,8 @@
                                             </div>
                                             <!--/.outter-svg-container-->
                                         </div>
-                                        <figure class="img--banner"><img src="img/banner_vertical--foto_test-1.jpg"
-                                                                         alt=""/></figure>
+                                        <figure class="img--banner"><img src="img/banner_vertical--instrucciones_analisis.jpg"
+                                                                         alt="Indicaciones para analisis"/></figure>
                                     </div>
                                 </a> <!--/.banner-vertical-->
                             </div> <!--/ indicaciones para analisis-->
@@ -613,8 +556,8 @@
                             <div class="col-xs-6">
                                 <a href="programas_externos.html">
                                     <div class="banner banner--vertical contenedor--azul">
-                                        <figure class="img--banner"><img src="img/banner_vertical--foto_test-1.jpg"
-                                                                         alt=""/></figure>
+                                        <figure class="img--banner"><img src="img/banner_vertical--programas_externos.jpg"
+                                                                         alt="Programas externos"/></figure>
                                         <div class="texto--banner contenedor-con-punta">
                                             <p class="h5 texto-invertido">Programas de Evaluación Externos de la
                                                 Calidad</p>

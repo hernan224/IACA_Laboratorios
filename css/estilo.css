@@ -3,7 +3,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic|Maven+Pro:400,500,700);
 
-@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css);
 
 /* Hoja de estilo principal. Nuevo sitio IACA Laboratorios */
 
@@ -2060,6 +2060,128 @@ ul.pagination li {
   display: inline-block;
 }
 
+/*Bootstrap Alerts*/
+
+.alert {
+  padding: 15px;
+  margin-bottom: 1.5em;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.alert .alert-link {
+  font-weight: bold;
+}
+
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+
+.alert > p + p {
+  margin-top: 5px;
+}
+
+.alert-dismissable {
+  padding-right: 35px;
+}
+
+.alert-dismissable .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+.alert-success {
+  background-color: #76b5e6;
+  border-color: transparent;
+  color: #112535;
+}
+
+.alert-success hr {
+  border-top-color: transparent;
+}
+
+.alert-success .alert-link {
+  color: #050a0e;
+}
+
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+}
+
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+  color: #245269;
+}
+
+.alert-warning {
+  background-color: #523f89;
+  border-color: transparent;
+  color: #eef3fa;
+}
+
+.alert-warning hr {
+  border-top-color: transparent;
+}
+
+.alert-warning .alert-link {
+  color: #c7d7ee;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+
+.alert-danger .alert-link {
+  color: #843534;
+}
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+  text-shadow: 0 1px 0 white;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
 /***** Estilos base ******/
 
 * {
@@ -2445,6 +2567,17 @@ hr {
   visibility: hidden !important;
 }
 
+/* ==========================================================================
+Browse Happy prompt
+========================================================================== */
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
 /** Puntas decorativas svg **/
 
 .contenedor-con-punta {
@@ -2662,7 +2795,7 @@ hr {
   padding: 24px 12px 8px;
   padding: 1.5rem 0.75rem 0.5rem;
   background-color: #eef3fa;
-  z-index: 500;
+  z-index: 900;
   -webkit-box-shadow: 0 3px 3px rgba(84, 103, 109, 0.4);
   box-shadow: 0 3px 3px rgba(84, 103, 109, 0.4);
 }
@@ -2803,6 +2936,13 @@ header {
   font-weight: 500;
 }
 
+/** Ancho maximo dispositivos moviles **/
+
+main.max_480 {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
 /** Banners **/
 
 .banner {
@@ -2879,9 +3019,9 @@ header {
 }
 
 .banner-horizontal.banner--full .texto--banner {
-  width: 40%;
-  padding: 48px 24px 24px 48px;
-  padding: 3rem 1.5rem 1.5rem 3rem;
+  width: 60%;
+  padding: 16px;
+  padding: 1rem;
 }
 
 .banner-horizontal.banner--full .img--banner {
@@ -2924,6 +3064,15 @@ header {
   padding: 25% 24px;
   padding: 25% 1.5rem;
   min-height: 15em;
+}
+
+.banner--vertical.banner--max_360 {
+  max-width: 360px;
+}
+
+.lista-servicios_movil .texto--banner {
+  min-height: 100%;
+  padding: 1.5em;
 }
 
 /** Sliders **/
@@ -2996,14 +3145,16 @@ header {
   margin-top: 1.5rem;
 }
 
-.accordion dt a {
+.accordion dt a,
+.accordion .item--resultado_paciente a {
   display: block;
   position: relative;
   margin: 0;
   background-color: #dadeec;
 }
 
-.accordion dt a .accordion_titulo {
+.accordion dt a .accordion_titulo,
+.accordion .item--resultado_paciente a .accordion_titulo {
   display: inline-block;
   width: 75%;
   padding: 12px 16px;
@@ -3014,12 +3165,15 @@ header {
 }
 
 .accordion dt a .h5,
-.accordion dt a .h4 {
+.accordion dt a .h4,
+.accordion .item--resultado_paciente a .h5,
+.accordion .item--resultado_paciente a .h4 {
   margin: 0;
   padding: 0;
 }
 
-.accordion dt a .accordion_btn {
+.accordion dt a .accordion_btn,
+.accordion .item--resultado_paciente a .accordion_btn {
   width: 25%;
   vertical-align: middle;
   text-align: center;
@@ -3031,57 +3185,70 @@ header {
   font-weight: 400;
 }
 
-.accordion dt a .btn_abrir {
+.accordion dt a .btn_abrir,
+.accordion .item--resultado_paciente a .btn_abrir {
   display: inline-block;
 }
 
-.accordion dt a .btn_cerrar {
+.accordion dt a .btn_cerrar,
+.accordion .item--resultado_paciente a .btn_cerrar {
   display: none;
 }
 
-.accordion dt a:hover {
+.accordion dt a:hover,
+.accordion .item--resultado_paciente a:hover {
   background-color: #8fa9ce;
 }
 
-.accordion dt a.active {
+.accordion dt a.active,
+.accordion .item--resultado_paciente a.active {
   background-color: #28427e !important;
 }
 
-.accordion dt a.active .accordion_titulo {
+.accordion dt a.active .accordion_titulo,
+.accordion .item--resultado_paciente a.active .accordion_titulo {
   background-color: #28427e !important;
   color: #eef3fa !important;
 }
 
-.accordion dt a.active .accordion_titulo .punta--right {
+.accordion dt a.active .accordion_titulo .punta--right,
+.accordion .item--resultado_paciente a.active .accordion_titulo .punta--right {
   display: none;
 }
 
-.accordion dt a.active .accordion_btn {
+.accordion dt a.active .accordion_btn,
+.accordion .item--resultado_paciente a.active .accordion_btn {
   color: #eef3fa !important;
 }
 
-.accordion dt a.active .btn_abrir {
+.accordion dt a.active .btn_abrir,
+.accordion .item--resultado_paciente a.active .btn_abrir {
   display: none;
 }
 
-.accordion dt a.active .btn_cerrar {
+.accordion dt a.active .btn_cerrar,
+.accordion .item--resultado_paciente a.active .btn_cerrar {
   display: inline-block;
 }
 
-.accordion dt:nth-of-type(even) a {
+.accordion dt:nth-of-type(even) a,
+.accordion .item--resultado_paciente:nth-of-type(even) a {
   background-color: #eef3fa;
 }
 
-.accordion dt:nth-of-type(even) a .accordion_titulo {
+.accordion dt:nth-of-type(even) a .accordion_titulo,
+.accordion .item--resultado_paciente:nth-of-type(even) a .accordion_titulo {
   background-color: #76b5e6;
   color: #112535;
 }
 
-.accordion dt:nth-of-type(even) a .accordion_titulo svg {
+.accordion dt:nth-of-type(even) a .accordion_titulo svg,
+.accordion .item--resultado_paciente:nth-of-type(even) a .accordion_titulo svg {
   fill: #76b5e6;
 }
 
-.accordion dt:nth-of-type(even) a:hover {
+.accordion dt:nth-of-type(even) a:hover,
+.accordion .item--resultado_paciente:nth-of-type(even) a:hover {
   background-color: #8fa9ce;
 }
 
@@ -3228,7 +3395,7 @@ header {
 #buscar_practica .lista_letras a,
 #buscar_practica--movil .lista_letras a {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0.2em 0.5em;
   text-transform: uppercase;
   color: #54676d;
   text-align: center;
@@ -3271,6 +3438,19 @@ header {
   margin: 0 auto 1.5rem;
 }
 
+#buscar_practica .busqueda_inline input,
+#buscar_practica--movil .busqueda_inline input {
+  display: inline-block;
+}
+
+#buscar_practica .busqueda_inline input[type="submit"],
+#buscar_practica--movil .busqueda_inline input[type="submit"] {
+  font-family: FontAwesome;
+  margin: 0 0 0 -5px;
+  padding: 19px;
+  padding: 1.2rem;
+}
+
 /** Formularios **/
 
 form input,
@@ -3288,8 +3468,8 @@ form textarea {
 form label {
   width: 12.5%;
   display: inline-block;
-  padding: 14px 0 14px 24px;
-  padding: 0.9rem 0 0.9rem 1.5rem;
+  padding: 14px 0 14px 12px;
+  padding: 0.9rem 0 0.9rem 0.75rem;
   z-index: 500;
 }
 
@@ -3325,6 +3505,8 @@ form option {
 
 .boton--enviar {
   background-color: #76b5e6 !important;
+  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 .boton--enviar:hover {
@@ -3333,11 +3515,31 @@ form option {
 
 .boton--cancelar {
   background-color: #657bc3 !important;
+  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .boton--cancelar:hover {
   background-color: #523f89 !important;
 }
+
+.centrador {
+  display: block;
+  margin: 0 auto 1.5em;
+  max-width: 24em;
+}
+
+.centrador .boton--enviar {
+  margin: 16px 8px 0 0;
+  margin: 1rem 0.5rem 0 0;
+}
+
+.centrador .boton--cancelar {
+  margin: 16px 0 0 0;
+  margin: 1rem 0 0 0;
+}
+
+/** Derivaciones **/
 
 /* Formulario comenzar a derivar */
 
@@ -3356,6 +3558,13 @@ form option {
   background-color: #0056a0;
 }
 
+/* Clietnes */
+
+#clientes {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
 /** la empresa **/
 
 .parrafo-especial {
@@ -3372,6 +3581,16 @@ form option {
 
 .descripcion-laboratorios li:last-child {
   margin-bottom: 0;
+}
+
+/** Laboratorios **/
+
+.laboratorios .labo_contacto {
+  margin-top: 0;
+}
+
+.laboratorios .labo_foto--interior {
+  margin-top: 1.5em;
 }
 
 /** Profesionales **/
@@ -3512,6 +3731,11 @@ form option {
   text-align: right;
 }
 
+.nota--img_principal {
+  margin: 48px 0;
+  margin: 3rem 0;
+}
+
 /** Publicaciones **/
 
 .lista-publicaciones {
@@ -3541,12 +3765,17 @@ form option {
 }
 
 .lista-publicaciones .publicaciones--footer a {
-  padding: 0 16px 24px;
-  padding: 0 1rem 1.5rem;
+  padding: 0 16px;
+  padding: 0 1rem;
 }
 
 .lista-publicaciones .publicaciones--footer a i.fa {
   margin-bottom: -0.5em;
+}
+
+.publicaciones--paginacion {
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .publicacion {
@@ -3584,6 +3813,15 @@ form option {
   margin-top: 2rem;
 }
 
+#mapa-contacto .banner-horizontal .header--banner {
+  width: 40%;
+}
+
+#mapa-contacto .banner--vertical .header--banner {
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+}
+
 .mapa-contacto,
 .info-contacto {
   display: inline-block;
@@ -3597,8 +3835,14 @@ form option {
   z-index: 400;
 }
 
+.mapa-contacto .flex-video {
+  margin-bottom: 0;
+}
+
 .info-contacto {
   z-index: 500;
+  margin-top: -6px;
+  margin-bottom: 1.5rem;
 }
 
 .info-contacto p {
@@ -3807,23 +4051,8 @@ form.formulario--carga_muestras .espaciador.reset--bottom {
   padding-bottom: 0;
 }
 
-form.formulario--carga_muestras .centrador {
-  display: block;
-  margin: 0 auto;
-  max-width: 24em;
-}
-
-form.formulario--carga_muestras .centrador .boton--enviar {
-  margin: 16px 8px 0 0;
-  margin: 1rem 0.5rem 0 0;
-}
-
-form.formulario--carga_muestras .centrador .boton--cancelar {
-  margin: 16px 0 0 0;
-  margin: 1rem 0 0 0;
-}
-
-.carga_muestra--seccion {
+.carga_muestra--seccion,
+.acceso {
   margin: 0 auto 48px;
   margin: 0 auto 3rem;
   width: 100%;
@@ -3831,7 +4060,7 @@ form.formulario--carga_muestras .centrador .boton--cancelar {
 }
 
 .label-seccion {
-  width: 90%;
+  width: 100%;
   margin-bottom: 16px;
   margin-bottom: 1rem;
   display: block;
@@ -3933,7 +4162,8 @@ form.formulario--carga_muestras .centrador .boton--cancelar {
 .btn_accion svg {
   width: 32px;
   width: 2rem;
-  height: 100%;
+  height: 32px;
+  height: 2rem;
   fill: #28427e;
 }
 
@@ -3984,126 +4214,157 @@ form.formulario--carga_muestras .centrador .boton--cancelar {
   margin-top: -1.5rem;
 }
 
-.lista_resultados dt .lista_resultados--btn {
+.lista_resultados dt .lista_resultados--btn,
+.lista_resultados .item--resultado_paciente .lista_resultados--btn {
   padding: 40px 0 40px 16px;
   padding: 2.5rem 0 2.5rem 1rem;
   width: 100%;
   background-color: #0056a0;
 }
 
-.lista_resultados dt .lista_resultados--btn.btn_xs {
+.lista_resultados dt .lista_resultados--btn.btn_xs,
+.lista_resultados .item--resultado_paciente .lista_resultados--btn.btn_xs {
   text-align: center;
 }
 
-.lista_resultados dt:nth-of-type(even) .lista_resultados--btn {
+.lista_resultados dt:nth-of-type(even) .lista_resultados--btn,
+.lista_resultados .item--resultado_paciente:nth-of-type(even) .lista_resultados--btn {
   background-color: #76b5e6;
 }
 
-.lista_resultados dt:nth-of-type(even) svg {
+.lista_resultados dt:nth-of-type(even) svg,
+.lista_resultados .item--resultado_paciente:nth-of-type(even) svg {
   fill: #76b5e6;
 }
 
-.lista_resultados dt .outter-svg-container {
+.lista_resultados dt .outter-svg-container,
+.lista_resultados .item--resultado_paciente .outter-svg-container {
   z-index: 500;
 }
 
-.lista_resultados dt .outter-svg-container svg {
+.lista_resultados dt .outter-svg-container svg,
+.lista_resultados .item--resultado_paciente .outter-svg-container svg {
   width: 16px;
   width: 1rem;
 }
 
-.lista_resultados dt .check_protocolo {
+.lista_resultados dt .check_protocolo,
+.lista_resultados .item--resultado_paciente .check_protocolo {
   position: absolute;
   padding: 16px 0 0 16px;
   padding: 1rem 0 0 1rem;
   z-index: 600;
 }
 
-.lista_resultados dt .info--resultado {
+.lista_resultados dt .info--resultado,
+.lista_resultados .item--resultado_paciente .info--resultado {
   padding: 16px 0;
   padding: 1rem 0;
   text-align: center;
 }
 
-.lista_resultados dt .nombre_paciente {
+.lista_resultados dt .nombre_paciente,
+.lista_resultados .item--resultado_paciente .nombre_paciente {
   text-transform: uppercase;
 }
 
-.lista_resultados dt .estado_leido--no {
+.lista_resultados dt .estado_leido--no,
+.lista_resultados .item--resultado_paciente .estado_leido--no {
   display: inline-block;
 }
 
-.lista_resultados dt .estado_leido--si {
+.lista_resultados dt .estado_leido--si,
+.lista_resultados .item--resultado_paciente .estado_leido--si {
   display: none;
 }
 
-.lista_resultados dt .consulta_procesando {
+.lista_resultados dt .consulta_procesando,
+.lista_resultados .item--resultado_paciente .consulta_procesando {
   display: none;
 }
 
-.lista_resultados dt .consulta_lista {
+.lista_resultados dt .consulta_lista,
+.lista_resultados .item--resultado_paciente .consulta_lista {
   display: inline-block;
 }
 
-.lista_resultados dt .info--resultado {
+.lista_resultados dt .info--resultado,
+.lista_resultados .item--resultado_paciente .info--resultado {
   font-weight: 700;
 }
 
-.lista_resultados dt.estado_procesando .consulta_procesando {
+.lista_resultados dt.estado_procesando .consulta_procesando,
+.lista_resultados .item--resultado_paciente.estado_procesando .consulta_procesando {
   display: inline-block;
 }
 
-.lista_resultados dt.estado_procesando .consulta_lista {
+.lista_resultados dt.estado_procesando .consulta_lista,
+.lista_resultados .item--resultado_paciente.estado_procesando .consulta_lista {
   display: none;
 }
 
-.lista_resultados dt.estado_procesando .info--resultado {
+.lista_resultados dt.estado_procesando .info--resultado,
+.lista_resultados .item--resultado_paciente.estado_procesando .info--resultado {
   font-weight: 400;
 }
 
-.lista_resultados dt.leido_si .estado_leido--si {
+.lista_resultados dt.leido_si .estado_leido--si,
+.lista_resultados .item--resultado_paciente.leido_si .estado_leido--si {
   display: inline-block;
 }
 
-.lista_resultados dt.leido_si .estado_leido--no {
+.lista_resultados dt.leido_si .estado_leido--no,
+.lista_resultados .item--resultado_paciente.leido_si .estado_leido--no {
   display: none;
 }
 
-.lista_resultados dt.leido_si .info--resultado {
+.lista_resultados dt.leido_si .info--resultado,
+.lista_resultados .item--resultado_paciente.leido_si .info--resultado {
   font-weight: 400;
 }
 
-.lista_resultados dt .protocolo_desactivado {
+.lista_resultados dt .protocolo_desactivado,
+.lista_resultados .item--resultado_paciente .protocolo_desactivado {
   background-color: #dadeec;
   display: block;
   position: relative;
   margin: 0;
 }
 
-.lista_resultados dt .protocolo_desactivado .lista_resultados--btn {
-  display: inline-block;
+.lista_resultados dt .protocolo_desactivado .lista_resultados--btn,
+.lista_resultados .item--resultado_paciente .protocolo_desactivado .lista_resultados--btn {
   background-color: #eef3fa;
   text-align: center;
 }
 
-.lista_resultados dt .protocolo_desactivado svg {
+.lista_resultados dt .protocolo_desactivado svg,
+.lista_resultados .item--resultado_paciente .protocolo_desactivado svg {
   fill: #eef3fa;
 }
 
-.lista_resultados dt a.active {
+.lista_resultados dt a.active,
+.lista_resultados .item--resultado_paciente a.active {
   background-color: #8fa9ce !important;
 }
 
 .lista_resultados dt a.active span.texto-negro,
-.lista_resultados dt a.active i.fa-check-circle-o {
+.lista_resultados dt a.active i.fa-check-circle-o,
+.lista_resultados .item--resultado_paciente a.active span.texto-negro,
+.lista_resultados .item--resultado_paciente a.active i.fa-check-circle-o {
   color: #eef3fa;
 }
 
-.lista_resultados dt a.active .lista_resultados--btn {
+.lista_resultados dt a.active .lista_resultados--btn,
+.lista_resultados .item--resultado_paciente a.active .lista_resultados--btn {
   background-color: #28427e;
 }
 
-.lista_resultados dt a.active .punta--left {
+.lista_resultados dt a.active .punta--left,
+.lista_resultados .item--resultado_paciente a.active .punta--left {
+  display: none;
+}
+
+.resultados_pacientes .check_protocolo {
   display: none;
 }
 
@@ -4128,7 +4389,8 @@ form.formulario--carga_muestras .centrador .boton--cancelar {
 .menu--interior_protocolo .icono--svg svg {
   width: 32px;
   width: 2rem;
-  height: 100%;
+  height: 32px;
+  height: 2rem;
   fill: #28427e;
 }
 
@@ -4194,9 +4456,46 @@ dt.leido_no + dd .icn_marcar-no_leido {
   display: none;
 }
 
-/***** Estilos para dispositivos de  480px de ancho, ó superior
-@import "_screen-xs";
-******/
+/**  Acceso  **/
+
+#login input,
+#login textarea,
+#solicitar_clave input,
+#solicitar_clave textarea {
+  background-color: #fff;
+}
+
+#login label,
+#solicitar_clave label {
+  background-color: #28427e;
+}
+
+section.acceso.oculto form {
+  display: none;
+}
+
+section.acceso.oculto .label-seccion {
+  background-color: #657bc3;
+  cursor: pointer;
+}
+
+section.acceso.oculto .label-seccion .punta--azul {
+  fill: #657bc3;
+}
+
+section.acceso.oculto .label-seccion p {
+  font-size: 21px;
+  font-size: 1.3125rem;
+}
+
+section.acceso.activo form {
+  display: block;
+}
+
+section.acceso .label-seccion {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
 
 /***** Estilos para dispositivos de  768px de ancho, ó superior ******/
 
@@ -4212,7 +4511,7 @@ dt.leido_no + dd .icn_marcar-no_leido {
   .lengua-sitio a .outter-svg-container,
   .menu-profesional a .outter-svg-container {
     display: none;
-    z-index: 510;
+    z-index: 910;
   }
 
   .lengua-sitio:hover a .outter-svg-container,
@@ -4292,10 +4591,23 @@ dt.leido_no + dd .icn_marcar-no_leido {
     margin-top: 5rem;
   }
 
+  /** Ancho maximo dispositivos moviles **/
+
+  main.max_480 {
+    max-width: 100%;
+    margin: 0;
+  }
+
   /** Banners **/
 
   .banner--vertical {
     max-width: auto;
+  }
+
+  .banner-horizontal.banner--full .texto--banner {
+    width: 40%;
+    padding: 48px 24px 24px 48px;
+    padding: 3rem 1.5rem 1.5rem 3rem;
   }
 
   /** slider **/
@@ -4304,7 +4616,12 @@ dt.leido_no + dd .icn_marcar-no_leido {
     padding-top: 0;
   }
 
-  /** Acordion **/
+  /** Formularios **/
+
+  form label {
+    padding-left: 24px;
+    padding-left: 1.5rem;
+  }
 
   /*** Página de inicio ***/
 
@@ -4359,10 +4676,9 @@ dt.leido_no + dd .icn_marcar-no_leido {
 
   /** Contacto **/
 
-  .mapa-contacto {
-    width: 67.9%;
-    margin-left: -4px;
-    margin-left: -0.27rem;
+  .mapa-contacto .flex-video {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 
   .info-contacto {
@@ -4390,19 +4706,30 @@ dt.leido_no + dd .icn_marcar-no_leido {
 
   /** Carga de muestras **/
 
-  .carga_muestra--seccion {
+  .carga_muestra--seccion,
+  .acceso {
     max-width: 100%;
-  }
-
-  .carga_muestra--seccion:last-of-type {
-    margin-bottom: 0;
   }
 
   .pacietnes-cargados #pedido {
     height: 36em;
   }
 
+  .label-seccion {
+    width: 90%;
+  }
+
+  /** Acceso **/
+
+  section.acceso .label-seccion {
+    width: 60%;
+  }
+
   /*** Lista de resultados de protocolos ***/
+
+  .resultados_pacientes .check_protocolo {
+    display: block;
+  }
 }
 
 /***** Estilos para dispositivos de  990px de ancho, ó superior ******/
@@ -4442,6 +4769,12 @@ dt.leido_no + dd .icn_marcar-no_leido {
     display: none;
   }
 
+  /** Buscar practica **/
+
+  #buscar_practica .busqueda_inline input[type="text"] {
+    width: 80%;
+  }
+
   /** La empresa **/
 
   .empresa--intro {
@@ -4459,6 +4792,15 @@ dt.leido_no + dd .icn_marcar-no_leido {
     width: 30%;
   }
 
+  .laboratorios .labo-intro {
+    padding-top: 2em;
+    padding-left: 2em;
+  }
+
+  .laboratorios .labo_foto--interior:first-of-type {
+    margin-top: 0;
+  }
+
   /** Profesionales **/
 
   .foto--profesional {
@@ -4474,6 +4816,12 @@ dt.leido_no + dd .icn_marcar-no_leido {
     max-width: 100%;
   }
 
+  /** Pacientes **/
+
+  .pacientes--intro {
+    padding: 2em;
+  }
+
   /** Noticias **/
 
   .nota {
@@ -4487,8 +4835,8 @@ dt.leido_no + dd .icn_marcar-no_leido {
 
   /** Contacto **/
 
-  .mapa-contacto {
-    width: 65%;
+  .mapa-contacto .flex-video {
+    padding-bottom: 50%;
   }
 
   .info-contacto {
@@ -4523,7 +4871,7 @@ dt.leido_no + dd .icn_marcar-no_leido {
   /** Carga de muestras **/
 
   .label-seccion {
-    width: 60%;
+    width: 65%;
   }
 
   .btn_contenedor--movil {
@@ -4540,7 +4888,8 @@ dt.leido_no + dd .icn_marcar-no_leido {
     padding-left: 0;
   }
 
-  .lista_resultados dt .lista_resultados--btn {
+  .lista_resultados dt .lista_resultados--btn,
+  .lista_resultados .item--resultado_paciente .lista_resultados--btn {
     padding: 16px 0 16px 16px;
     padding: 1rem 0 1rem 1rem;
   }
@@ -4552,6 +4901,8 @@ dt.leido_no + dd .icn_marcar-no_leido {
   .menu--interior_protocolo .icono--svg svg {
     width: 20px;
     width: 1.25rem;
+    height: 20px;
+    height: 1.25rem;
     vertical-align: text-bottom;
   }
 
@@ -4577,6 +4928,18 @@ dt.leido_no + dd .icn_marcar-no_leido {
     padding: 3rem;
   }
 
+  /** Pacientes **/
+
+  .pacientes--intro {
+    padding-top: 4em;
+  }
+
+  /** Derivaciones **/
+
+  .derivaciones--intro {
+    padding: 3em;
+  }
+
   /** Contacto **/
 
   .info-contacto {
@@ -4587,5 +4950,11 @@ dt.leido_no + dd .icn_marcar-no_leido {
   .info-contacto .contenedor-con-punta {
     padding: 16px 8px;
     padding: 1rem 0.5rem;
+  }
+
+  /** Buscar practica **/
+
+  #buscar_practica .busqueda_inline input[type="text"] {
+    width: 84%;
   }
 }

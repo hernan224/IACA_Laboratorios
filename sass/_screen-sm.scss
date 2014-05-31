@@ -12,7 +12,7 @@
 
   a .outter-svg-container{
     display: none;
-    z-index: 510;
+    z-index: 910;
   }
 
   &:hover{
@@ -92,10 +92,28 @@
 }
 
 
+/** Ancho maximo dispositivos moviles **/
+
+main{
+  &.max_480{
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
 /** Banners **/
 
 .banner--vertical{
   max-width: auto;
+}
+
+.banner-horizontal{
+  &.banner--full{
+    .texto--banner{
+      width: 40%;
+      @include x-rem(padding, 3 1.5 1.5 3);
+    }
+  }
 }
 
 /** slider **/
@@ -105,15 +123,13 @@
 }
 
 
-/** Acordion **/
+/** Formularios **/
 
-//.accordion{
-//  dt a{
-//    .btn_xs{
-//      //@include x-rem(margin, -3 0 0 3);
-//    }
-//  }
-//}
+form{
+  label{
+    @include x-rem(padding-left, 1.5);
+  }
+}
 
 
 
@@ -183,8 +199,9 @@
 
 /** Contacto **/
 .mapa-contacto{
-  width: 67.9%;
-  @include x-rem(margin-left, -0.27);
+  .flex-video{
+    @include x-rem(margin-bottom, 1.5);
+  }
 }
 
 .info-contacto{
@@ -217,12 +234,13 @@ footer{
 ****************************************************/
 
 /** Carga de muestras **/
-.carga_muestra--seccion{
+.carga_muestra--seccion,
+.acceso{
   max-width: 100%;
 
-  &:last-of-type{
+  /*&:last-of-type{
     margin-bottom: 0;
-  }
+  }*/
 }
 
 .pacietnes-cargados {
@@ -231,6 +249,16 @@ footer{
   }
 }
 
+.label-seccion{
+  width: 90%;
+}
+
+/** Acceso **/
+section.acceso{
+  .label-seccion{
+    width: 60%;
+  }
+}
 
 
 /*** Lista de resultados de protocolos ***/
@@ -243,3 +271,9 @@ footer{
 //     }
 //   }
 // }
+
+.resultados_pacientes{
+  .check_protocolo{
+    display: block;
+  }
+}

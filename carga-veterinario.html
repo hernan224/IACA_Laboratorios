@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/estilo.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
 
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/css3-mediaqueries.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
+<![endif]-->
         <!-- Add your site or application content here -->
 
         <div class="menu-top-bg">
@@ -79,13 +86,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -99,7 +106,7 @@
 
                             </li>
 
-                            <li class="activo"><a href="pacientes.html">Pacientes <i class="fa fa-caret-down"></i></a>
+                            <li><a href="pacientes.html">Pacientes <i class="fa fa-caret-down"></i></a>
                                 <ul class="dropdown list-inline">
                                     <li><a href="indicaciones.html">Indicaciones para análisis</a></li>
                                     <li><a href="pacientes.html#informe_resultados">Informe de resultados</a></li>
@@ -131,7 +138,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="/">Inicio</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
 
                         <span class="breadcrumb--no_link">Carga de Muestras Veterinarias</span>
                     </div> <!--/.breadcrumb-->
@@ -140,7 +147,7 @@
             </header>
 
 
-            <main class="carga-muestra">
+            <main class="carga-muestra max_480">
                 <h1 class="texto-azul">Carga de Muestras Veterinarias</h1>
 
                 <form class="formulario--carga_muestras" action="">
@@ -159,7 +166,7 @@
                                     </div>
 
 
-                                        <p class="h4 texto-invertido titulo_label">Datos del Paciente Veterinario</p>
+                                        <p class="h4 texto-invertido titulo_label">Datos Paciente Veterinario</p>
                                         <div class="outter-svg-container punta--right"><div class="inner-svg-container">
                                             <svg class="svg-right punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="20.802 0 24.112 262.895"  preserveAspectRatio="none" xml:space="preserve"><polygon points="20.914,0 44.914,130.713 20.914,262.895 0,262.895 0,0 "/></svg>
                                         </div></div>

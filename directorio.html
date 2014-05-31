@@ -11,13 +11,21 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
-
+		
         <!-- Add your site or application content here -->
 
         <div class="menu-top-bg">
@@ -79,13 +87,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -131,7 +139,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="/">Inicio</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
                         <a class="breadcrumb--link" href="derivaciones.html">Derivaciones</a>
                         <span class="breadcrumb--no_link">Directorio de Análisis</span>
                     </div> <!--/.breadcrumb-->
@@ -140,7 +148,7 @@
             </header>
 
 
-            <main class="directorio_analisis">
+            <main class="directorio_analisis max_480">
                 <h1 class="texto-azul">Directorio de Análisis</h1>
                 <div class="row">
 
@@ -202,7 +210,7 @@
 
                                         <li><input class="boton--enviar" type="submit" value="Buscar"/></li>
 
-                                        <li class="busqueda_alfabetica hidden-xs">
+                                        <li class="busqueda_alfabetica hidden-xs hidden-sm">
                                             <p>Búsqueda alfabética</p>
 
                                             <div class="lista_letras">
@@ -1104,36 +1112,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <!--<script src="js/foundation/foundation.js"></script>
-        <script src="js/foundation/foundation.accordion.js"></script>-->
-
-        <!--<script>
-            $(document).ready(function(){
-                /** Acordion **/
-                var allPanels = $('.accordion > dd').hide();
-                var allTriggers = $('.accordion > dt > a');
-
-                $(allTriggers).click(function() {
-                    //e.preventDefault();
-                    $this = $(this);
-                    $target =  $this.parent().next();
-
-                    if(!$target.hasClass('active')){
-                        allPanels.removeClass('active').slideUp();
-                        allTriggers.removeClass('active');
-                        $target.addClass('active').slideDown();
-                        $this.addClass('active');
-                    }
-                    else{
-                        $target.removeClass('active').slideUp();
-                        $this.removeClass('active');
-                    }
-
-                    return false;
-                });
-            });
-        </script>-->
+        <script src="js/main.js"></script>       
 
     </body>
 </html>

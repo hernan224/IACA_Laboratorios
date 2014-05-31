@@ -8,16 +8,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-
-        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
+		
+		<link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
@@ -51,8 +59,8 @@
                             <a class="hidden-xs" href="#"><i class="fa fa-lg fa-linkedin"></i> </a>
                         </li>
 
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="#"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="#"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="acceso_paciente.html"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="acceso_profesional.html"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
                     </ul>
 
 
@@ -65,13 +73,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -117,7 +125,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="/">Inicio</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
                         
                         <span class="breadcrumb--no_link">Derivaciones</span>
                     </div> <!--/.breadcrumb-->
@@ -126,7 +134,7 @@
             </header>
 
 
-            <main class="derivaciones">
+            <main class="derivaciones max_480">
 
                 <h1 class="texto-azul">Derivaciones</h1>
 
@@ -151,7 +159,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-5 derivaciones--intro">
                         <p class="parrafo-destacado">Desde su fundación en 1974, <strong>IACA Laboratorios</strong> brinda servicios a terceros, lo cual nos posiciona en un lugar de privilegio para poder brindar una respuesta adecuada.
                             <br/>
                             Más de 1000 clientes diseminados en toda la República Argentina y países limítrofes, derivan muestras para análisis de mediana y alta complejidad a nuestros laboratorios: <strong>Clínico Humano, Industrial, Bromatológico , Agronómico, Veterinario y de Bioanalítica</strong>.
@@ -229,9 +237,9 @@
                 </div>
 
 
-                <div id="clientes" class="row">
+                <div class="row">
 
-                    <div class="col-xs-12">
+                    <div  id="clientes" class="col-xs-12 col-sm-7 col-md-12">
                         <h2 class="texto-azul">Clientes</h2>
 
                         <ul class="list-unstyled small-block-grid-1 medium-block-grid-2 large-block-grid-3">
@@ -256,13 +264,11 @@
                             <li><i class="fa fa-check texto-azul">&nbsp;&nbsp;</i>Empresas Farmacéuticas </li>
                             <li><i class="fa fa-check texto-azul">&nbsp;&nbsp;</i>Laboratorios Agronómicos</li>
                         </ul>
-                    </div>
-
-                </div><!--/#clientes-->
+                    </div><!--/#clientes-->
 
 
-                <div class="row">
-                    <div id="logistica" class="col-sm-4 col-xs-12">
+
+                    <div id="logistica" class="col-md-4 col-sm-5 col-xs-12">
                         <h2 class="texto-azul">Logística</h2>
 
                         <p>
@@ -282,7 +288,7 @@
                         </p>
                     </div> <!--/#logistica-->
                     
-                    <div id="comenzar-derivacion" class="col-sm-8 col-xs-12">
+                    <div id="comenzar-derivacion" class="col-md-8 col-sm-12 col-xs-12">
                         <h2 class="texto-azul">Comenzar a derivar</h2>
 
                         <p>

@@ -3,7 +3,8 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic|Maven+Pro:400,500,700);
 
 
-@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css);
+//@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css);
 
 //Variables
 @import "_variables";
@@ -32,14 +33,16 @@
 /* Foundation Flex-pagination*/
 @import "foundation/components/_pagination";
 //@import "foundation/components/_accordion";
+/*Bootstrap Alerts*/
+@import "bootstrap/alerts";
+@import "bootstrap/close";
+
 
 /***** Estilos base ******/
 @import "_base";
 
 
-/***** Estilos para dispositivos de  480px de ancho, ó superior
-@import "_screen-xs";
-******/
+
 /***** Estilos para dispositivos de  768px de ancho, ó superior ******/
 @media (min-width: $screen-sm-min) {
   @import "_screen-sm";

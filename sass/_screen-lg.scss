@@ -11,7 +11,18 @@
   @include x-rem(padding, 3);
 }
 
+/** Pacientes **/
 
+.pacientes--intro{
+  padding-top: 4em;
+}
+
+
+/** Derivaciones **/
+
+.derivaciones--intro{
+  padding: 3em;
+}
 
 /** Contacto **/
 
@@ -20,5 +31,14 @@
 
   .contenedor-con-punta{
     @include x-rem(padding, 1 0.5);
+  }
+}
+
+
+/** Buscar practica **/
+
+#buscar_practica .busqueda_inline{
+  input[type="text"]{
+    width: 84%;
   }
 }

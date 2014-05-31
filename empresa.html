@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
+   <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
@@ -11,14 +11,21 @@
 
         <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
-        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
@@ -52,8 +59,8 @@
                             <a class="hidden-xs" href="#"><i class="fa fa-lg fa-linkedin"></i> </a>
                         </li>
 
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="#"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="#"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="acceso_paciente.html"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="acceso_profesional.html"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
                     </ul>
 
 
@@ -66,13 +73,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li class="activo"><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -118,7 +125,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="/">Inicio</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
 
                         <span class="breadcrumb--no_link">La empresa</span>
                     </div> <!--/.breadcrumb-->
@@ -127,7 +134,7 @@
             </header>
 
 
-            <main>
+            <main class="empresa max_480">
                 <h1 class="texto-azul">La Empresa</h1>
 
                 <div id="intro-empresa" class="row">
@@ -218,7 +225,7 @@
                     <div class="col-sm-8 col-sm-pull-4">
 
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-xs-6">
                                 <a href="profesionales.html">
                                     <div class="banner banner--vertical">
                                         <div class="texto--banner contenedor--celeste contenedor-con-punta">
@@ -232,15 +239,15 @@
                                             </div>
                                             <!--/.outter-svg-container-->
                                         </div>
-                                        <figure class="img--banner"><img src="img/banner_vertical--foto_test-1.jpg" alt=""/></figure>
+                                        <figure class="img--banner"><img src="img/banner_vertical--staff_profesional.jpg" alt=""/></figure>
                                     </div>
                                 </a> <!--/.banner--vertical  profesionales-->
                             </div>
 
-                            <div class="col-sm-6">
+                            <div class="col-xs-6">
                                 <a href="programas_externos.html">
                                     <div class="banner banner--vertical">
-                                        <figure class="img--banner"><img src="img/banner_vertical--foto_test-1.jpg" alt=""/></figure>
+                                        <figure class="img--banner"><img src="img/banner_vertical--programas_externos.jpg" alt=""/></figure>
                                         <div class="texto--banner contenedor--azul contenedor-con-punta">
                                             <p class="h5 texto-invertido"><i class="fa fa-caret-right texto-negro">
                                                 &nbsp;&nbsp;</i>Programas de Evaluación Externos de la Calidad</p>
@@ -298,11 +305,11 @@
 
                     <div class="col-xs-12"><h2 class="texto-azul">Laboratorios</h2></div>
 
-                    <div class="col-sm-7 col-md-6">
+                    <div class="col-xs-12 col-sm-7 col-md-6">
 
+                        <div class="banner banner-horizontal contenedor--gris">
+                            <a href="labo-san-martin.html">
 
-                        <a href="labo-san-martin.html">
-                            <div class="banner banner-horizontal contenedor--gris">
                                 <div class="banner-inner-container">
                                     <div class="texto--banner contenedor-con-punta contenedor--gris pull-left">
                                         <p class="h5 texto-negro hidden-xs hidden-sm"><i class="fa fa-caret-right texto-invertido">
@@ -318,14 +325,13 @@
                                     </div>
                                 </div>
 
-                                <figure class="img--banner pull-right"><img src="img/banner_horizontal--foto_test-1.jpg" alt=""/></figure>
+                                <figure class="img--banner pull-right"><img src="img/banner_horizontal--sede_san-martin.jpg" alt=""/></figure>
+                            </a>
+                        </div><!--/.banner  sede san martin-->
 
-                            </div>
-                        </a> <!--/.banner  sede san martin-->
-
-                        <a href="labo-darwin.html">
-                            <div class="banner banner-horizontal contenedor--violeta">
-                                <figure class="img--banner pull-left"><img src="img/banner_horizontal--foto_test-1.jpg" alt=""/></figure>
+                        <div class="banner banner-horizontal contenedor--violeta">
+                            <a href="labo-darwin.html">
+                                <figure class="img--banner pull-left"><img src="img/banner_horizontal--sede_darwin.jpg" alt=""/></figure>
 
                                 <div class="banner-inner-container">
                                     <div class="texto--banner contenedor-con-punta contenedor--violeta pull-right">
@@ -344,11 +350,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a> <!--/.banner  sede darwin-->
+                            </a>
+                        </div><!--/.banner  sede darwin-->
 
-                        <a href="labo-rodriguez.html">
-                            <div class="banner banner-horizontal contenedor--azul">
+
+                        <div class="banner banner-horizontal contenedor--azul">
+                            <a href="labo-rodriguez.html">
 
                                 <div class="banner-inner-container">
                                     <div class="texto--banner contenedor-con-punta contenedor--azul pull-left">
@@ -367,14 +374,13 @@
                                     </div>
                                 </div>
 
-                                <figure class="img--banner pull-right"><img src="img/banner_horizontal--foto_test-1.jpg" alt=""/></figure>
-                            </div>
-                        </a> <!--/.banner  sede rodriguez-->
-
+                                <figure class="img--banner pull-right"><img src="img/banner_horizontal--sede_rodriguez.jpg" alt=""/></figure>
+                            </a>
+                        </div><!--/.banner  sede rodriguez-->
 
                     </div>
 
-                    <div class="col-sm-5 col-md-6">
+                    <div class="col-xs-12 col-sm-5 col-md-6">
                         <ul class="list-unstyled descripcion-laboratorios">
                             <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i><strong>Desde 1980 laboratorio
                                 n°1 de la red ALAC</strong></li>

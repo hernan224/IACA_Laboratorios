@@ -11,15 +11,23 @@
 
         <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
-        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
-
+		
         <!-- Add your site or application content here -->
 
         <div class="menu-top-bg">
@@ -51,8 +59,8 @@
                             <a class="hidden-xs" href="#"><i class="fa fa-lg fa-linkedin"></i> </a>
                         </li>
 
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="#"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="#"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="acceso_paciente.html"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="acceso_profesional.html"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
                     </ul>
 
 
@@ -65,13 +73,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li class="activo"><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -117,7 +125,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="/">Inicio</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
                         <a class="breadcrumb--link" href="empresa.html">La empresa</a>
                         <span class="breadcrumb--no_link">Sede Darwin</span>
                     </div> <!--/.breadcrumb-->
@@ -126,7 +134,7 @@
             </header>
 
 
-            <main class="laboratorios sede_san-martin">
+            <main class="laboratorios sede_san-martin max_480">
 
                 <h1 class="texto-azul">Sede Darwin</h1>
 
@@ -175,8 +183,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp; </i>Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp; </i>Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -190,69 +198,54 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
+                                                <p>Los análisis bromatológicos tienen una importancia capital para determinar la calidad de los alimentos.</p>
+                                                <p>Todos los alimentos contemplados en el Código Alimentario Argentino, Normas MERCOSUR, Regulaciones de SENASA, etc., son procesados habitualmente en este Laboratorio.</p>
+                                                <p>Realiza los tests confirmatorios de los screenings de drogas positivas.
                                                 </p>
-
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
-
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
+                                                <p>Alimentos cárneos y afines, productos grasos, lácteos, farináceos, azucarados, frutas y hortalizas, aceites comestibles, miel, aguas y bebidas, productos estimulantes, correctivos y coadyuvantes, alimentos dietéticos, aditivos alimentarios, presentan requisitos analíticos cada día más exigentes y requieren alta complejidad para su correcto monitoreo.
+                                                    <br/> La miel y los aceites comestibles ( oliva, maiz, girasol, colza, soja) ocupan sectores analíticos especiales.</p>
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
-                                            <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                            <div class="col-xs-12 servicios">
+                                                <h5 class="texto-azul">Servicios</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Control de Calidad Químico y Microbiológico de materias primas, productos intermedios y terminados.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Apoyo analítico en la investigación y desarrollo de nuevos productos.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Determinaciones analíticas de contraverificación.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Análisis según Sistema ARPCC: Contaminación de productos alimenticios.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Aguas: Perfiles completos para potabilidad según Art.982 del Código Alimentario Argentino.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Peritajes toxicológicos.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Seguimiento analítico en la formulación de alimentos.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Auditorias higiénico-sanitarias en comedores y servicios de catering.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Asesoramiento en Calidad de Alimentos según Código Alimentario Argentino y Normas Mercosur.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Interpretación Tecnológica y Legal de resultados.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i> Toma de muestra, entrega de informes y gestión de cobro en la empresa o en planta elaboradora.</li>
+                                                </ul>
+                                            </div> <!--/.servicios-->
+
+                                            <div class="col-xs-12 tecnologias">
+                                                <h5 class="texto-azul">Tecnologías</h5>
+
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Absorción Atómica 2380 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Absorción Atómica Aanalyst 100 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Absorción Atómica Aanalyst 600 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo líquido Waters. Detectores UV y Fluorescencia</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Electroforésis Capilar Hewlett Packard c/DAD</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>ICP-AES . Espectroscopía de emisión de plasma acoplado inductivamente</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-                                                
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -262,11 +255,44 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9950</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>bromatologia@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Ricardo Mussini</strong> <br/>
+                                                    <em>Lic. en Química</em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesional</strong></p>
+
+                                                <p>
+                                                    <strong>Alejandra Orte</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+                                                <p>
+                                                    <strong>Julio Gil Donnari</strong> <br/>
+                                                    <em> Técnico Químico </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Ariadna Sandón</strong>
+                                                </p>
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Laboratorio Bromatológico-->
@@ -281,8 +307,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp; </i>Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp; </i>Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -296,37 +322,95 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
-                                                </p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
+                                                <p>En las últimas dos décadas, se ha producido en nuestra ciudad y la zona, un desarrollo industrial muy importante, que se encuentra representado en uno de los polos industriales más importantes y complejos de la República Argentina.</p>
 
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
+                                                <p>Nuestro Laboratorio surge en 1985, como una necesidad de estas empresas, de tercerizar ciertos servicios analíticos, de las más variadas actividades industriales: química, petroquímica, petrolera, agroquímica, agropecuaria, aceitera, pesquera, etc.</p>
+
+                                                <p>Trabajamos conjuntamente con la industria, dando el apoyo técnico-químico para la solución de problemas específicos, diseñando muestreos, equipos auxiliares y técnicas analíticas ad hoc.</p>
+
+                                                <p>A todos los requerimientos hemos sabido responder a tiempo, con personal profesional y técnico debidamente preparado, y con tecnología acorde a las exigencias de nuestros clientes.</p>
+
+                                                <p>Nuestro servicio comprende desde el asesoramiento, a la toma de muestra, al servicio analítico propiamente dicho y a la entrega de resultados con interpretación de acuerdo a normas y leyes nacionales y/o internacionales.</p>
+
+                                                <p>Recibimos continuos desafíos analíticos para el control del impacto ambiental en suelo, agua y aire.</p>
+
+                                                <p>Materias primas y materiales muy diversos son analizados diariamente.</p>
+
+                                                <p>Abonos, aguas, barros industriales, combustibles, cosméticos, efluentes industriales, fertilizantes y residuos varios, están incluidos en nuestro largo directorio de análisis.</p>
+
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
-                                            <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                            <div class="col-xs-12 servicios">
+                                                <h5 class="texto-azul">Servicios</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Control de Calidad Químico y Microbiológico de materias primas, productos intermedios y terminados.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Apoyo analítico en la investigación y desarrollo de nuevos productos  industriales.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Determinaciones analíticas de para certificación de calidad según Normas</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Efluentes industriales: evaluación de su impacto ecológico según metodologías analíticas oficiales</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Aguas: perfiles completos para calderas y circuitos de refrigeración, piscinas, morteros y hormigones de cemento portland, prueba hidráulica, etc.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Perfiles de impacto ambiental en suelo, agua y aire.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Emisiones gaseosas: según Decreto 3395 del PE de la Provincia de Buenos Aires.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Aire ambiental : contaminantes orgánicos e inorgánicos.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Estudio del microclima laboral. Leyes 19587 y 24557</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Toma de muestra, entrega de informes y gestión de cobro en la empresa o en planta industrial.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Seguimiento analítico en la formulación de productos industriales.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Análisis fisicoquímico de residuos sólidos y barros industriales.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Interpretación de resultados según Ley Nacional 24051 de Residuos Peligrosos.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Desarrollo y aplicación de métodos analíticos para resolución de problemas específicos.</li>
+                                                </ul>
+                                            </div> <!--/.servicios-->
+
+                                            <div class="col-xs-12 col-md-6 tecnologias">
+                                                <h5 class="texto-azul">Materiales procesados</h5>
+
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Agentes clorogenos orgánicos e inorgánicos</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Materiales  para la construcción : cal, cemento, yeso, arena, etc</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Aguas de uso industrial</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Barros industriales (con o sin ensayo de lixiviación)
+                                                    <ul class="fa-ul">
+                                                        <li><i class="fa fa-li fa-check-circle texto-azul"></i>Sólidos</li>
+                                                         <li><i class="fa fa-li fa-check-circle texto-azul"></i>Semisólidos</li>
+                                                    </ul></li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Combustibles y lubricantes</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cosméticos: cremas, shampoes, lociones, jabones, etc.</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Efluentes industriales líquidos</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Emisiones gaseosas</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Fertilizantes quimicos</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Productos farmaceúticos</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Productos químicos primarios según Normas IRAM: ácido sulfúrico, soda caústica, ácido muriático, amoníaco, etc.</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Productos de uso industrial</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Residuos sólidos</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Suelos: Impacto ambiental</li>
+                                                </ul>
+                                            </div> <!--/.materiales procesados-->
+
+                                            <div class="col-xs-12 col-md-6 tecnologias">
+                                                <h5 class="texto-azul">Tecnologías</h5>
+
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo gaseoso Hewlett Packard 6890 Detector ECD</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrómetro selectivo de masas</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Absorción Atómica 2380 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Absorción Atómica Aanalyst 100 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Absorción Atómica Aanalyst 600 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Generador de Hidruros FIAS 100 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Bombas de muestreo de aire caudal constante</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Analizador de Hidrocarburos Buck Scientific HC-404</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrómetro Emisión Optica Horiba</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>ICP-AES . Espectroscopía de emisión de plasma acoplado inductivamente</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Sistema de osmosis inversa - Planta de agua ultrapura ELGA - Purelab</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Muestreador automático Tecora Isostack Basic HV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Analizador de gases de combustión Testo 350 XL</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -334,31 +418,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -368,11 +427,50 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9951</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>quimicaindustrial@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Ricardo Mussini</strong> <br/>
+                                                    <em>Lic. en Química</em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesional</strong></p>
+
+                                                <p>
+                                                    <strong>Cristian Gonzalez</strong> <br/>
+                                                    <em> Lic. en Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Diego Ferracuti</strong> <br/>
+                                                    <em>Técnico Universitario en Laboratorios Químicos y Control de Calidad </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Cecilia Diaz Chiesa</strong> <br/>
+                                                    <em> Técnica Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Daniela Luncio</strong> <br/>
+                                                    <em> Técnica Agraria </em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Laboratorio Industrial y Medio Ambiental-->
@@ -387,8 +485,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp; </i>Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp; </i>Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -402,69 +500,78 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
-                                                </p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
+                                                <p>El Laboratorio Agronómico acompaña al proceso productivo del agro en toda su extensión.</p>
 
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
+                                                <p>Los análisis de suelos, aguas, semillas y fertilizantes, permiten a productores, acopiadoras y exportadoras, un mejor conocimiento de la calidad de lo que producen o venden, y con ello obtener un mejor rédito económico.</p>
+
+                                                <p><strong>Análisis de semillas</strong> <br/>
+                                                    <i class="fa fa-check-square-o texto-azul">&nbsp;&nbsp;</i>Identificación varietal de trigo, cebada, avena y sorgo - Pureza - Poder germinativo - Viavilidad - Malezas</p>
+
+                                                <p><strong>Análisis de suelos</strong> <br/>
+                                                    <i class="fa fa-check-square-o texto-azul">&nbsp;&nbsp;</i>pH - Materia Orgánica - Nitrógeno total - Fósforo - Potasio</p>
+
+                                                <p><strong>Análisis de aguas para riego</strong> <br/>
+                                                    <i class="fa fa-check-square-o texto-azul">&nbsp;&nbsp;</i>Físico - Químico - Microbiológico</p>
+
+                                                <p><strong>Análisis foliares</strong> <br/>
+                                                    <i class="fa fa-check-square-o texto-azul">&nbsp;&nbsp;</i>Macro y micronutrientes</p>
+
+                                                <p><strong>Análisis de alimentos para animales</strong> <br/>
+                                                    <i class="fa fa-check-square-o texto-azul">&nbsp;&nbsp;</i>Alimento balanceado-Forraje -Forrajes verdes - Henos</p>
+
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-sm hidden-xs"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-sm hidden-xs"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
                                             </div> <!--fotos-->
 
-                                            <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                            <div class="col-xs-12 col-md-6 tecnologias">
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Electroforésis Capilar Hewlett Packard</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Absorción Atómica Perkin Elmer 2380</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrofotómetro Hach</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo Gaseoso Hewlett Packard . Detector de masa</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Absorción Atómica Aanalyst 600 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cámara de Germinación</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Fotómetro Anthos 2010</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microscopio Carl Zeiss</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador Hematológico Cell Dyn 3200 Abbott</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador Hematológico Sismex XE 2100 Roche</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 E-170 ISE-900</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 EE-170 ISE-900</li>
                                                 </ul>
+                                            </div> <!--/.materiales procesados-->
+
+                                            <div class="col-xs-12 col-md-6 tecnologias">
+                                                <h5 class="texto-azul">Certificaciones</h5>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Norma ISO 9001:2000 - Sistema de Gestión de la Calidad </li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>IRAM - Instituto Argentino de Acreditación - Registro R I900-462 </li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>IQNet - International Certification Network - Registro RI 9000-462</li>
+                                                </ul>
+
+                                                <h5 class="texto-azul">Habilitaciones</h5>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>INASE - Laboratorio de Análisis de Semillas - Registro N° 4751/I</li>
+                                                </ul>
+
+                                                <h5 class="texto-azul">Distinciones</h5>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Sello Baires de reconocimiento a la Calidad 2003</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Ministerio de Asuntos Agrarios y Producción - Provincia de Buenos Aires</li>
+                                                </ul>
+
                                             </div> <!--/.tecnologias-->
 
                                         </div>
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -474,11 +581,31 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9958</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>agronomia@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Jorge Quartucci</strong> <br/>
+                                                    <em>Ing. Agrónomo</em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Laboratorio Agronómico-->
@@ -493,8 +620,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp; </i>Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp; </i>Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -508,37 +635,74 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
+
+                                                <p>Las Ciencias Veterinarias han avanzado de tal manera en las últimas décadas, que sus conocimientos y la tecnología utilizada en el diagnóstico de enfermedades han equiparado a los de bioquímica humana.
+                                                    <br/>
+                                                    IACA Laboratorios mantiene desde su fundación (en 1974), los más altos niveles tecnológicos y de recursos humanos para el apoyo analítico de las siguientes especialidades veterinarias:
                                                 </p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
+                                                <strong>Clínica de pequeños animales </strong>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Hematología</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Química Clínica</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Endocrinología y Reproducción</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Inmunología</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Urianálisis</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Bacteriología y Parasitología</li>
+                                                </ul>
 
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
+
+                                                <strong>Equinos de deporte</strong>
+                                                <ul class="fa-ul">
+                                                     <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Anemia Infecciosa Equina</li>
+                                                     <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Perfil de Rendimiento Deportivo</li>
+                                                     <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Perfil de Crecimiento del Potrillo</li>
+                                                     <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Perfil Mineral</li>
+                                                </ul>
+
+
+                                                <strong>Producción y clínica de grandes animales</strong>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Enfermedades Venéreas y Abortivas</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Enfermedades Carenciales  Perfil Mineral</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Aguas de Bebida Animal</li>
+                                                </ul>
+
+
+                                                <strong>Otros</strong>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Mascotas y Producciones No Tradicionales</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Estudios Especiales en Especies Exóticas y de Bioterio</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Trichinella spirallis por D.A.R.</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Toxicología</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Necropsias</li>
+                                                </ul>
+
+
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i> Autoanalizador hematológico Sysmex XT Roche</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador hematológico Cell Dyn 3200 Abbott</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Advia Centaur Bayer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 E-170 ISE 900 Roche</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 EE-170 ISE-900</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo líquido Hewlet Packard 1050 Bomba cuaternaria U.V. -Visible</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo líquido Hewlet Packard 1050 Bomba Isocrática</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo líquido Hewlet Packard 1100 .Sampleador 100 muestras</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrofotómetro Absorción Atómica Perkin Elmer 2380</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrofotómetro Absorción Atómica Perkin Elmer Aanalyst 600</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Generador de Hidruros y Vapor Frío FIAS Perkin Elmer</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -546,31 +710,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -580,11 +719,31 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9956</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>veterinaria@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Maria Alejandra Prochazka</strong> <br/>
+                                                    <em>Veterinaria</em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Laboratorio Veterinario-->
@@ -599,8 +758,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp; </i>Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp; </i>Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -614,37 +773,66 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
-                                                </p>
+                                                <p>Desde el año 2005 IACA Laboratorios brinda soporte analítico para los estudios de investigación en farmacología clínica solicitados por empresas de la industria farmacéutica y CRO´s.</p>
+                                                <p>Para la determinación de moléculas especificas, hemos sido autorizados por los entes regulatorios ANMAT de Argentina e ISP de Chile, estando previsto gestionar próximamente la autorización ante ANVISA de Brasil.</p>
+                                                <p>A tales fines hemos inaugurado un nuevo y moderno laboratorio de Bioanalítica de 600 m2 dotado de todas las especificaciones requeridas por las más exigentes normativas internacionales en la materia.</p>
+                                                <p>Dicho laboratorio forma parte de un nuevo complejo edilicio ubicado en Darwin 530 de Bahía Blanca de 1660 m2 que complementa nuestra actual estructura edilicia ubicada en pleno centro de la ciudad.</p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
-
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-sm hidden-xs"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
-                                            <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                            <div class="col-xs-12 col-md-6 tecnologias">
+                                                <h5 class="texto-azul">Métodos analíticos validados</h5>
+
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Acido salicílico + Acetilsalicílico  - HPLC/UV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Acido salicílico + Acetilsalicílico - LC MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Alprazolam - HPLC/UV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Carbamacepina - HPLC/UV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cilostazol - HPLC/UV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Claritromicina - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Fenitoína - HPLC/UV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Formoterol - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Imatinib -  LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Lamotrigina - HPLC/UV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Leflunomide - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Losartan - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Metformina - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Mosapride - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Octreótido - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Pridinol - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Rabeprazol - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Rabeprazol - HPLC/UV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Ranolazina - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Ramipril - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Ritonavir - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Saquinavir - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Tenofovir - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Tenofovir + Lamivudina - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Tizoxanida - HPLC/UV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Topiramato - LC - MS/MS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Valproato - HPLC/Fluorescencia</li>
+                                                </ul>
+                                            </div> <!--/.tecnologias-->
+
+                                            <div class="col-xs-12 col-md-6 tecnologias">
+                                                <h5 class="texto-azul">Tecnologías</h5>
+
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>LC  MS/MS  Espectrómetro de Masas en Tandem XEVO TQ Ms Waters</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>LC  MS/MS - Espectrómetro de Masas en Tandem Thermo Finningan TSQ Quantum</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>HPLC Cromatógrafo liquido con detector de fluorescencia Waters</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>HPLC Cromatógrafo liquido con detector UV Waters</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Baño de ultrasonido c/control temperatura marca Elma</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Estufa de secado y/o esterilización marca Memmert</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Balanza electrónica analítica marca Ohaus, modelo DV215CD</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microcentrífuga refrigerada marca Eppedonrf, modelo 5415R</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Peachimetro marca Hanna Instruments, modelo HI 3220</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -652,31 +840,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -686,11 +849,58 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9953</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>bioanalitica@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>M. Fernanda de Mena</strong> <br/>
+                                                    <em>Bióloga </em>
+                                                </p>
+                                                <p>
+                                                    <strong>M. Victoria Simoni</strong> <br/>
+                                                    <em>Bioquímica </em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesional</strong></p>
+
+                                                <p>
+                                                    <strong>Margarita M. Gabbarini</strong> <br/>
+                                                    <em> Lic. en Bioquímica </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Verónica Contreras</strong> <br/>
+                                                    <em> Técnica Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>María Fernanda Tarantino</strong> <br/>
+                                                    <em> Lic. en Ciencias de la Computación </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Laura Tonelli</strong> <br/>
+                                                    <em> Lic. en Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Gisela Otero</strong> <br/>
+                                                    <em>Administrativa</em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Laboratorio de Bioanalítica-->

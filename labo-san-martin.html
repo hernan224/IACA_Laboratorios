@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
+   <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
@@ -11,15 +11,23 @@
 
         <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
-        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
-
+		
         <!-- Add your site or application content here -->
 
         <div class="menu-top-bg">
@@ -51,8 +59,8 @@
                             <a class="hidden-xs" href="#"><i class="fa fa-lg fa-linkedin"></i> </a>
                         </li>
 
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="#"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="#"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="acceso_paciente.html"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="acceso_profesional.html"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
                     </ul>
 
 
@@ -65,13 +73,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li class="activo"><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -117,7 +125,7 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="/">Inicio</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
                         <a class="breadcrumb--link" href="empresa.html">La empresa</a>
                         <span class="breadcrumb--no_link">Sede San Martín</span>
                     </div> <!--/.breadcrumb-->
@@ -126,7 +134,7 @@
             </header>
 
 
-            <main class="laboratorios sede_san-martin">
+            <main class="laboratorios sede_san-martin max_480">
 
                 <h1 class="texto-azul">Sede San Martín</h1>
 
@@ -182,8 +190,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -197,37 +205,63 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
+                                                <p>
+                                                    Servicio habilitado por INCUCAI - CUCAIBA <br/>
+                                                    Desde 1993 utilizamos técnicas de Biología Molecular, las que comenzaron con el estudio de algunos virus. <br/>
+                                                    Desde entonces este Departamento ha crecido utilizando para su desarrollo la tecnología más moderna.
                                                 </p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Filiación -Paternidad express - Maternidad - Hermandad - Abuelismo</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>ADN mitocondrial -  Cromosoma Y - Filiacion DNA anónimo</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Identificaciòn de Personas</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Histocompatibilidad</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Tipificación de receptores y donantes de órganos</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Transplante de médula ósea</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Forenses</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Factores genéticos de riesgo trombótico</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Oncohematológicos</li>
 
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
-                                            </div> <!--/.descripcion-->
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Cargas Virales</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>ADN</li>
+
+                                                </ul>
+
+
+                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>ABI prism 310 Genetic Analizer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>MagNA Pure Compact Roche (2)</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>LightCycler 2.0 Real Time PCR System (2)</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cobas Taqman Roche</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microscopio de Epifluorescencia Olympus BX 41 ( FISH)</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microscopio NIkon Eclipse E200 con contraste de fase</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Termociclador Labnet MultiGene ( 2)</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Termociclador 2400 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Termociclador 480 Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Incubador de CO2 marca Termo Scientific, Modelo 3111</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Centrífuga refrigerada marca Eppendorf, Modelo 5430R</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cabina de flujo laminar vertical PCR marca Esco, modelo SCR-2A1</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Sistema Band/Fishview - Sistema integrado de imágenes, marca Applied Spectral Imaging (ASI)</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Ultracentrífuga refrigerada Eppendorf</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Ultracentrífuga refrigerada Beckman Coulter</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrofotómetro NanoDrop 1000 Thermo Scientific</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Estufa de cultivo Queue</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cuba electroforesis vertical Model SA Life Technologies</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cuba electroforesis vertical BioMax STS 45i</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Fuente alto  V 4001 Life Technologies</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Thermomixer Eppendorf</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Flujo Laminar HL Casiba</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Sistema Imágenes Applied Spectral Imaging Band View / FISH</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -235,31 +269,6 @@
                                     </div>
                                     
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-                                                
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -269,11 +278,50 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9969</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>bmolecular@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Edgardo Streitenberger</strong> <br/>
+                                                    <em>Bioquímico</em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesionales</strong></p>
+
+                                                <p>
+                                                    <strong>Maria del Pilar Corral</strong> <br/>
+                                                    <em>Bioquímica </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Ariel Suarez</strong> <br/>
+                                                    <em>Bioquímico  </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Carolina Borrelli</strong> <br/>
+                                                    <em>Técnica Química  </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Isabela Corinaldi</strong> <br/>
+                                                    <em>Técnica en Industrias de Proceso  </em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Dpto. biologia molecular-->
@@ -288,8 +336,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -303,37 +351,52 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
+                                                <p>
+                                                    Laboratorio especializado Acreditado por Fundación Bioquímica Argentina. <br/>
+                                                    Este Departamento tiene un amplio directorio de prácticas de rutina, mediana y alta complejidad para el estudio de:
                                                 </p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Pruebas funcionales endócrinas</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Trastornos del metabolismo hidrocarbonado (diabetes, insulinoresistencia)</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Pruebas de reserva pancreática</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Metabolismo fosfocálcico</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Osteoporosis: diagnóstico y seguimiento</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Hormonas del eje hipotálamo hipófiso tiroideo,suprarrenal, gonadal ,somatotrófico</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Obesidad: adipocitoquinas</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Marcadores tumorales</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Neurotransmisores y metabolitos</li>
+                                                    <li>
+                                                        <i class="fa fa-li fa-check-square-o texto-azul"></i>Endocrinología Reproductiva:
 
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
+                                                            <ul class="fa-ul">
+                                                                <li><i class="fa fa-li fa-check-circle texto-azul"></i>Factor femenino. evaluación del ciclo menstrual , de la reserva ovárica,   estimulación ovárica, estudio del moco cervical.</li>
+                                                                <li><i class="fa fa-li fa-check-circle texto-azul"></i>Factor masculino: Estudio integral de Variables Espermáticas, pruebas dinámicas de   capacitación del semen para Fertilización Asistida, evaluación de la fragmentación   del ADN espermático ( Test de TUNEL), tests inmunológicos.</li>
+                                                            </ul>
+                                                    </li>
+                                                </ul>
+
+
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 E-170 ISE-900, ROCHE</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 EE-170 ISE-900, ROCHE</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador Advia Centaur XP (2) SIEMENS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Acces Immnuassay System Beckman Coulter</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Immulite 2000 SIEMENS</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Contador Gamma Ingetron</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafos líquidos Hewlett Packard 1050 (4)</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo líquido Hewlett packard 1100  </li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -341,31 +404,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -375,11 +413,62 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9971</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>endocrinologia@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Marcela Barbera</strong> <br/>
+
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesionales</strong></p>
+
+                                                <p>
+                                                    <strong>Sandra Antista</strong> <br/>
+                                                    <em>Bioquímica </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Patricia Fernandez</strong> <br/>
+                                                    <em>Bioquímica   </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Silvana Montero</strong> <br/>
+                                                    <em>Bioquímica  </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Leticia Baccini</strong> <br/>
+                                                    <em>Bioquímica </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Diego Garcia Bustamante</strong> <br/>
+                                                    <em>Técnico Químico  </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Rebeca Moulia</strong> <br/>
+                                                    <em>Técnica Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Maria del Carmen Oyarzun</strong> <br/>
+                                                    <em>Técnica Química </em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Departamento de Endocrinología-->
@@ -394,8 +483,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -409,37 +498,34 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
+                                                <p>
+                                                    Es función de este Departamento el estudio de la citología hematológica y de diversas patologías leuco-eritrocitarias.
+                                                    <br/>
+                                                    Talasemias y otras hemoglobinopatías. <br/>
+                                                    Trombofilias y alteraciones de la coagulación. <br/>
+                                                    Citogenética y oncohematologia.
                                                 </p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
-
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador Hematológico Cell Dyn 3200 Abbott</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador Hematológico Sysmex XT 2000i Roche</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador de Eritrosedimentación e.s.r. Monitor 20 Analyzer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Citómetro de Flujo FACScan  Calibur Becton Dickinson</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Coagulómetro automatizado STA Compact Roche</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Hematofluorómetro 206 AVIV</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Hemoxímetro OSM 3 Radiometer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Sistema Hydrasys Focusing Phoresis Sebia</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Capillarys 2 Sebia</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -447,31 +533,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -486,6 +547,49 @@
                                                 <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Enrique Reimer</strong> <br/>
+                                                    <em>Bioquímico </em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesionales</strong></p>
+
+                                                <p>
+                                                    <strong>Dra. Alejandra Larregina</strong> <br/>
+                                                    <em>Hematóloga  </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Pablo Martinez</strong> <br/>
+                                                    <em>Bioquímico   </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Alejandro Lopez Romero</strong> <br/>
+                                                    <em>Bioquímico </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Gabriel López</strong> <br/>
+                                                    <em>Bioquímico </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Juan Gilio</strong> <br/>
+                                                    <em>Técnico Químico  </em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Departamento de Hematología-->
@@ -500,8 +604,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -515,37 +619,44 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
+                                                <p>
+                                                    Este Departamento tiene a su cargo una gran variedad de practicas que pueden ser agrupadas en :
                                                 </p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Serología ( Virus, hongos, bacterias)</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Autoinmunidad</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Marcadores tumorales</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Evaluación de la competencia inmunológica</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>Estudios de Alergia in vitro</li>
+                                                    <li><i class="fa fa-li fa-check-square-o texto-azul"></i>HLA</li>
+                                                </ul>
+                                                <p>
+                                                    El Laboratorio esta acreditado por la Fundación Bioquímica Argentina como    Laboratorio Especializado en Inmunología.
+                                                </p>
 
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 E-170 ISE-900</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 EE-170 ISE-900</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Axsym System Abbott</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Nefelómetro IMMAGE Beckman</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Sistema Hydrasys Focus sing / Phoresis Sebia</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microspcopio fluorescencia Leitz</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microscopio fluorescencia NIKON x-cite</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microscopio luz invertida Zeiss</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>IFI Automatizado</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Capillarys 2 Sebia</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>IMMULATE DPC 2000</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -553,31 +664,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -587,11 +673,58 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9971</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>endocrinologia@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Ana Eichelmann</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+                                                <p>
+                                                    <strong>Andrea Larregina</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesionales</strong></p>
+
+                                                <p>
+                                                    <strong>Luciana Eidenson</strong> <br/>
+                                                    <em>Bioquímica </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Claudio Yungblut</strong> <br/>
+                                                    <em>Bioquímico  </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Tatiana Odoux</strong> <br/>
+                                                    <em>Técnica Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Natalia Padilla</strong> <br/>
+                                                    <em>Técnica Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Leticia Getino</strong> <br/>
+                                                    <em>Técnica Química </em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Departamento de Inmunología-->
@@ -606,8 +739,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -638,20 +771,20 @@
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Anthos 2010 Lector de placa</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Fluorómetro Victor2 Perkin Elmer</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -659,31 +792,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -693,11 +801,38 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9962</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>metabolopatias@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Niels Suldrup</strong> <br/>
+                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesional</strong></p>
+
+                                                <p>
+                                                    <strong>Natalia Cesari</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Departamento de Metaboloplastía-->
@@ -712,8 +847,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -727,37 +862,36 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
+                                                <p>El Departamento de Microbiología, realiza los estudios bacteriológicos, micológicos, parasitológicos y virales.
+                                                    <br/>
+                                                    A los cultivos clásicos, este Departamento ha anexado Sistemas de Identificación estandarizados, asociados a bases de datos que brindan interpretaciones automatizadas, permitiendo tipificaciones más rápidas y certeras de bacterias y levaduras.
                                                 </p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
+                                                <p>Se han incorporado además métodos moleculares de detección de antígenos bacterianos para el diagnóstico de microorganismos de compleja y difícil recuperación como HPV, Mycobacterias, Chlamydia , etc.</p>
 
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
+                                                <p>Se determinan también mecanismos de resistencia, sensibilidad de microorganismos de difícil desarrollo y pruebas para identificación y sensibilidad de hongos y levaduras.</p>
+
+                                                <p>El Departamento participa permanentemente de Programas Externos de Control de Calidad y capacitación profesional constante.</p>
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador orinas Urisys 2400</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoanalizador Sysmex UF-1000i</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Estufa Cultivo hongos</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Estufa cultivo 37 y 60 ºC</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microscopio Olympus Bimax</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microscopio Olympus contraste de fases</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Microscopio Jena fondo oscuro</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Gabinete de Seguridad Biológica Clase II Tipo A Baker Sterigald</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Autoclave vertical automática Tuttnauer con procesador y ciclos preprogramados</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -765,31 +899,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -799,11 +908,57 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9964</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>microbiologia@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Claudio Chavéz</strong> <br/>
+                                                    <em>Bioquímico</em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesional</strong></p>
+
+                                                <p>
+                                                    <strong>Mónica Lheman</strong> <br/>
+                                                    <em>Lic. en Ccias. Biológicas </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Margarita M. Gabbarini</strong> <br/>
+                                                    <em>Lic. en Bioquímica</em>
+                                                </p>
+                                                <p>
+                                                    <strong>Sandra Calcagni</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+                                                <p>
+                                                    <strong>Gabriela Fernandez</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+                                                <p>
+                                                    <strong>Mauro Rosell</strong> <br/>
+                                                    <em> Técnico Químico </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Marta Stuhldreher</strong> <br/>
+                                                    <em>Tca. Superior Agrario en Suelos y Aguas </em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
                                     </div>
                                 </div>
                             </dd>  <!--Departamento de Microbiología-->
@@ -818,8 +973,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -833,37 +988,25 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
-                                                </p>
+                                                <p>Este Departamento tiene a su cargo el estudio de la Química Clínica de rutina, en forma totalmente automatizado.</p>
 
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
-
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
+                                                <p>También realiza los estudios de mayor complejidad como antioxidantes, estudios metabólicos de litiasis renal, exámenes cristalográficos de cálculos, marcadores de riesgo cardiovascular, etc.</p>
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular P-800 E-170 ISE-900</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Modular p-800 EE-170 ISE-900</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Rapidlab 248 Bayer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Axsym System Abbott</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Fluorómetro Delfia Wallac</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -871,31 +1014,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -905,11 +1023,50 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9960</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>quimicaclinica@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Roberto Suarez</strong> <br/>
+                                                    <em>Bioquímico</em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesional</strong></p>
+
+                                                <p>
+                                                    <strong>Carla Lucarelli</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+                                                <p>
+                                                    <strong>Ana Paula Rodriguez Cortejarena</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+                                                <p>
+                                                    <strong>Carina Malmoria</strong> <br/>
+                                                    <em> Técnica Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Belen Ache</strong> <br/>
+                                                    <em> Técnica Química </em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Departamento de Química Clínica-->
@@ -924,8 +1081,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Conozca este departamento</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Conozca este departamento</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -939,37 +1096,36 @@
                                         <div class="row">
 
                                             <div class="col-md-8 col-md-push-4 descripcion">
-                                                <p>En la actualidad se reconocen más de 800 enfermedades provocadas por
-                                                    errores congénitos del metabolismo. Un gran número de estas
-                                                    patologías conducen a retraso del desarrollo físico y mental y, en
-                                                    algunos casos, comprometen la vida del niño.
+                                                <p>Este Departamento tiene a su cargo la investigación de más de 200 analitos distintos: drogas terapéuticas y drogas de abuso, metales,  alcoholes y sustancias varias.
                                                 </p>
-
-                                                <p>Muchos de estos trastornos son inaparentes en el momento del
-                                                    nacimiento, esto hace necesario realizar de las pruebas de pesquisa
-                                                    o "screening" en el período neonatal. <br/>
-                                                    En la mayoría de los casos, con el tratamiento médico adecuado
-                                                    temprano, las graves consecuencias pueden ser evitadas.</p>
-
-                                                <p>En IACA Laboratorios podemos realizar la detección, confirmación diagnóstica y seguimiento de pacientes afectados por estas patologías</p>
+                                                <p>Cuenta con cadena de custodia para el control de alcohol y drogas .
+                                                </p>
+                                                <p>Realiza los tests confirmatorios de los screenings de drogas positivas.
+                                                </p>
+                                                <p>Función importante de este Departamento es el control de la Toxicología Laboral en personas expuestas a sustancias perniciosas para la salud humana.
+                                                </p>
                                             </div> <!--/.descripcion-->
 
                                             <div class="col-md-4 col-md-pull-8 labo_fotos">
                                                 <figure class="labo_foto--interior"><img src="img/img-labo_interior-1.jpg" alt="Labo interior 1"/></figure>
-                                                <figure class="labo_foto--interior"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
+                                                <figure class="labo_foto--interior hidden-xs hidden-sm"><img src="img/img-labo_interior-2.jpg" alt="Labo imterior 2"/></figure>
                                             </div> <!--fotos-->
 
                                             <div class="col-xs-12 tecnologias">
-                                                <h6 class="texto-azul">Tecnologías</h6>
+                                                <h5 class="texto-azul">Tecnologías</h5>
 
-                                                <ul class="list-unstyled">
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en Tandem - Espectrómetro Thermo Finnigan TSQ Quantum</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Espectrometría de Masas en tandem . Espectrómetro Xebo Waters</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Gaseoso ( GC) Hewlett Packard 6890</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo líquido ( HPLC) UV-Vis Hewlett Packard 1050</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Cromatógrafo Líquido ( HPLC) UV-Vis Hewlett Packard 1200</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Anthos 2010 Lector de placa</li>
-                                                    <li><i class="fa fa-caret-right texto-azul">&nbsp;&nbsp;</i>Fluorómetro Victor2 Perkin Elmer</li>
+                                                <ul class="fa-ul">
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Axsym System Abbott</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafos líquidos Hewlett Packard 1050 (4)</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo líquido Hewlett Packard 1100</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo líquido Hewlett Packard 1200</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Detectores: IV-Visible-Electroquímico</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Cromatógrafo gaseoso Hewlett Packard</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Detectores: MS FID NPD ECD</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>IPC - Espectrómetro Emisión Optica Horiba</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrómetro de Absorción Atómica Aanalyst 100 - Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Espectrómetro de Absorción Atómica Aanalyst 600 - Perkin Elmer</li>
+                                                    <li><i class="fa fa-li fa-caret-right texto-azul"></i>Generador de hidruros y vapor frío FIAS Perkin  Elmer</li>
                                                 </ul>
                                             </div> <!--/.tecnologias-->
 
@@ -977,31 +1133,6 @@
                                     </div>
 
                                     <div class="col-md-4 col-sm-5">
-                                        <div class="banner banner--vertical labo_staff">
-                                            <header class="header--banner contenedor--azul contenedor-con-punta">
-                                                <p class="h5 texto-invertido">Staff Profesional</p>
-                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
-                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
-                                                </div></div> <!--/.outter-svg-container-->
-                                            </header>
-                                            <div class="contenido--banner contenedor--gris_claro">
-
-                                                <p class="h6 texto-azul_oscuro">Jefe</p>
-
-                                                <p>
-                                                    <strong>Niels Suldrup</strong> <br/>
-                                                    <em>Bioquímico - Especialista en Metabolopatías</em>
-                                                </p>
-
-                                                <p class="h6 texto-azul_oscuro">Profesional</p>
-
-                                                <p>
-                                                    <strong>Natalia Cesari</strong> <br/>
-                                                    <em>Bioquímica</em>
-                                                </p>
-
-                                            </div>
-                                        </div> <!--/.banner staff profesional-->
 
                                         <div class="banner banner--vertical labo_contacto">
                                             <header class="header--banner contenedor--celeste contenedor-con-punta">
@@ -1011,11 +1142,54 @@
                                                 </div></div> <!--/.outter-svg-container-->
                                             </header>
                                             <div class="contenido--banner contenedor--blanco">
-                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9974</p>
+                                                <p><i class="fa fa-phone texto-azul">&nbsp;&nbsp;</i>(0291) 459-9976</p>
 
-                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>hematologia@iaca.com.ar</p>
+                                                <p><i class="fa texto-azul fa-envelope-o">&nbsp;&nbsp;</i>toxicologia@iaca.com.ar</p>
                                             </div>
                                         </div> <!--/.banner contacto-->
+
+                                        <div class="banner banner--vertical labo_staff">
+                                            <header class="header--banner contenedor--azul contenedor-con-punta">
+                                                <p class="h5 texto-invertido">Staff Profesional</p>
+                                                <div class="outter-svg-container punta--down"><div class="inner-svg-container">
+                                                    <svg class="svg-down punta--azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="82.019 453.721 262.895 24.226"  preserveAspectRatio="none" xml:space="preserve"><polygon points="344.914,453.948 214.201,477.948 82.019,453.948 82.019,433.034 344.914,433.034 " /></svg>
+                                                </div></div> <!--/.outter-svg-container-->
+                                            </header>
+                                            <div class="contenido--banner contenedor--gris_claro">
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Jefe</strong></p>
+
+                                                <p>
+                                                    <strong>Eugenio Castro</strong> <br/>
+                                                    <em>Bioquímico</em>
+                                                </p>
+
+                                                <p class="h6 texto-azul_oscuro"><strong>Profesional</strong></p>
+
+                                                <p>
+                                                    <strong>Romina Suarez</strong> <br/>
+                                                    <em>Bioquímica</em>
+                                                </p>
+                                                <p>
+                                                    <strong>Dolores Dominguez</strong> <br/>
+                                                    <em> Técnica Química </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Claudio Cagiao</strong> <br/>
+                                                    <em> Técnico Químico </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Hernan Zaragoci</strong> <br/>
+                                                    <em> Técnica Químico </em>
+                                                </p>
+                                                <p>
+                                                    <strong>Manuela Santa Olaya</strong> <br/>
+                                                    <em> Técnica en Hemoterapia </em>
+                                                </p>
+
+                                            </div>
+                                        </div> <!--/.banner staff profesional-->
+
                                     </div>
                                 </div>
                             </dd>  <!--Departamento de Toxicología-->

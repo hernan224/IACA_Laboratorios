@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
+   <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
@@ -11,11 +11,19 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/css3-mediaqueries.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
@@ -49,8 +57,8 @@
                             <a class="hidden-xs" href="#"><i class="fa fa-lg fa-linkedin"></i> </a>
                         </li>
 
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="#"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
-                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="#"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-paciente"><a href="acceso_paciente.html"><i class="fa fa-lg fa-user"></i><strong>Acceso Paciente</strong></a></li>
+                        <li class="col-md-3 col-sm-6 col-xs-12  acceso-profesional"><a href="acceso_profesional.html"><i class="fa fa-lg fa-user-md"></i><strong>Acceso Profesional</strong></a></li>
                     </ul>
 
 
@@ -63,13 +71,13 @@
             <header class="row">
 
                 <div class="col-lg-4 col-md-3 col-sm-12">
-                    <div class="logo-container"><a class="text-hide" href="#">IACA Laboratorios</a></div> <!--/logo-container-->
+                    <div class="logo-container"><a class="text-hide" href="index.html">IACA Laboratorios</a></div> <!--/logo-container-->
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <nav class="menu-principal">
 
                         <ul id="main-nav" class=" list-inline">
-                            <li ><a href="/">Inicio</a></li>
+                            <li ><a href="index.html">Inicio</a></li>
 
                             <li class="activo"><a href="empresa.html">La Empresa <i class="fa fa-caret-down"></i></a>
 
@@ -115,8 +123,8 @@
 
                 <div class="col-xs-12">
                     <div class="breadcrumb-nav">
-                        <a class="breadcrumb--link" href="">Inicio</a>
-                        <a class="breadcrumb--link" href="">Pacientes</a>
+                        <a class="breadcrumb--link" href="index.html">Inicio</a>
+                        <a class="breadcrumb--link" href="empresa.html">La empresa</a>
                         <span class="breadcrumb--no_link">Programas de evaluación externos de la calidad</span>
                     </div> <!--/.breadcrumb-->
                 </div>
@@ -124,7 +132,7 @@
             </header>
 
 
-            <main class="programas_externos">
+            <main class="max_480">
                 <h1 class="texto-azul">Programas de evaluación externos de la calidad</h1>
 
                 <div class="row">
@@ -146,8 +154,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -503,8 +511,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -528,8 +536,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -567,8 +575,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -590,8 +598,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -613,8 +621,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -636,8 +644,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -660,8 +668,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -683,8 +691,8 @@
                                         </div></div>
                                     </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -714,8 +722,8 @@
                                 </div></div>
                             </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -739,8 +747,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -762,8 +770,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -801,8 +809,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -847,8 +855,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -869,8 +877,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -893,8 +901,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -918,8 +926,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -942,8 +950,8 @@
                                     </div></div>
                                 </div>
                                 <span class="accordion_btn btn_md texto-azul">
-                                    <i class="btn_abrir fa fa-plus-circle">&nbsp;&nbsp; Ver más</i>
-                                    <i class="btn_cerrar fa fa-times-circle">&nbsp;&nbsp; Cerrar</i>
+                                    <span class="btn_abrir"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i> Ver más</span>
+                                    <span class="btn_cerrar"><i class="fa fa-times-circle">&nbsp;&nbsp;</i> Cerrar</span>
                                 </span>
                                 <span class="accordion_btn btn_xs texto-azul">
                                     <i class="btn_abrir fa fa-plus-circle fa-2x">&nbsp;&nbsp;</i>
@@ -964,7 +972,7 @@
                     <div class="col-md-3 col-sm-4 hidden-xs">
 
                         <div class="banner banner--vertical atencion-paciente">
-                            <figure class="img--banner"><img src="img/img-profesionales.jpg" alt=""/></figure>
+                            <figure class="img--banner"><img src="img/atencion_telefonica.jpg" alt=""/></figure>
                             <div class="texto--banner contenedor-con-punta contenedor--azul_oscuro">
 
                                 <p class="h5 texto-invertido">Atención al paciente</p>

@@ -38,6 +38,14 @@
   }
 }
 
+/** Buscar practica **/
+
+#buscar_practica .busqueda_inline{
+  input[type="text"]{
+    width: 80%;
+  }
+}
+
 /** La empresa **/
 
 .empresa--intro{
@@ -54,6 +62,18 @@
 
   .accordion_btn{
     width: 30%;
+  }
+}
+
+.laboratorios{
+
+  .labo-intro{
+    padding-top: 2em;
+    padding-left: 2em;
+  }
+
+  .labo_foto--interior:first-of-type{
+    margin-top: 0;
   }
 }
 
@@ -75,6 +95,12 @@
 }
 
 
+/** Pacientes **/
+
+.pacientes--intro{
+  padding: 2em;
+}
+
 /** Noticias **/
 
 .nota{
@@ -88,7 +114,9 @@
 
 /** Contacto **/
 .mapa-contacto{
-  width: 65%
+  .flex-video{
+    padding-bottom: 50%;
+  }
 }
 
 .info-contacto{
@@ -128,7 +156,7 @@
 /** Carga de muestras **/
 
 .label-seccion{
-  width: 60%;
+  width: 65%;
 }
 
 .btn_contenedor--movil{
@@ -150,7 +178,8 @@
 
 .lista_resultados{
 
-  dt{
+  dt,
+  .item--resultado_paciente{
 
     .lista_resultados--btn
     {
@@ -167,6 +196,7 @@
 
   .icono--svg svg{
     @include x-rem(width, 1.25);
+    @include x-rem(height, 1.25);
     vertical-align: text-bottom;
   }
 
