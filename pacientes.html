@@ -24,9 +24,12 @@
         <![endif]-->
     </head>
     <body>
-        <!--[if lt IE 9]>
-            <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
-        <![endif]-->
+    <!--[if lt IE 10]>
+    <div class="browsehappy--container">
+        <div class="browsehappy--bg"></div>
+        <p class="browsehappy">Esta utilizando un navegador web <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/"><strong>actualice su navegador</strong></a> para poder acceder al sitio.</p>
+    </div>
+    <![endif]-->
 
         <!-- Add your site or application content here -->
 
@@ -142,11 +145,11 @@
 
                         <div class="contenedor-slider">
                             <ul id="owl-pacientes" class="list-unstyled owl-carousel">
-                                <li><img src="img/slider/lorem-1.jpg" alt="foto iaca"/></li>
-                                <li><img src="img/slider/lorem-2.jpg" alt="foto iaca"/></li>
-                                <li><img src="img/slider/lorem-3.jpg" alt="foto iaca"/></li>
-                                <li><img src="img/slider/lorem-4.jpg" alt="foto iaca"/></li>
-                                <li><img src="img/slider/lorem-5.jpg" alt="foto iaca"/></li>
+                                <li><img src="img/slider/pacientes-01.jpg" alt="foto iaca"/></li>
+                                <li><img src="img/slider/pacientes-02.jpg" alt="foto iaca"/></li>
+                                <li><img src="img/slider/pacientes-03.jpg" alt="foto iaca"/></li>
+                                <li><img src="img/slider/pacientes-04.jpg" alt="foto iaca"/></li>
+                                <li><img src="img/slider/pacientes-05.jpg" alt="foto iaca"/></li>
                             </ul>
 
                             <div class="contenedor-con-punta slider-control owl-theme contenedor--azul_oscuro">
@@ -229,13 +232,30 @@
                         <p class="h5 texto-azul">¿Debo solicitar turno?</p>
 
                         <p>No es necesario para los estudios generales. Sí, en algunos estudios especiales (Filiación, fertilidad, Test del sudor, etc).</br>
-                            El horario del laboratorio es de 7.00 hs a 20.00 hs de lunes a viernes, 7.00 hs a 13.00 hs días sábados.
-                        </p>
+                            El horario del laboratorio es:</p>
+                            <ul class="fa-ul">
+                                <li><i class="fa fa-li fa-caret-right texto-azul"></i><strong>Sede San Martin:</strong> Lunes a Viernes de 7:00 a 20:00  Sabado: 7:00 a 13:00 </li>
+                                <li><i class="fa fa-li fa-caret-right texto-azul"></i><strong>Sede Rodriguez:</strong> Lunes a Viernes de 7:00 a 18:00 Sabado 7:00 a 12:00 </li>
+                                <li><i class="fa fa-li fa-caret-right texto-azul"></i><strong>Sede Darwin:</strong> Lunes a Viernes de 8:00 a 17:00 Sabado 8:00 a 13:00 </li>
+                            </ul>
+
 
                         <p class="h5 texto-azul">¿Atienden Obras Sociales?</p>
 
-                        <p>Sí, atendemos todos los convenios.
+                        <p>En la Sede San Martin atendemos todas las obras sociales. <br/>
+
+                            En la Sede Rodriguez, por disposición de la Federación Bioquímica de la Pcia de Buenos Aires, que rige exclusivamente para todo nuevo Laboratorio, <strong>momentáneamente no se atenderán los siguientes convenios capitados</strong>:
                         </p>
+
+                        <ul class="fa-ul">
+                           <li><i class="fa fa-li fa-caret-right texto-azul"></i> IOMA</li>
+                           <li><i class="fa fa-li fa-caret-right texto-azul"></i> LUZ y FUERZA</li>
+                           <li><i class="fa fa-li fa-caret-right texto-azul"></i> OSECAC</li>
+                           <li><i class="fa fa-li fa-caret-right texto-azul"></i> SEGURO PUBLICO DE SALUD</li>
+                           <li><i class="fa fa-li fa-caret-right texto-azul"></i> OSSEG</li>
+                           <li><i class="fa fa-li fa-caret-right texto-azul"></i> CENTRO MUNICIPAL DE SALUD</li>
+                           <li><i class="fa fa-li fa-caret-right texto-azul"></i> OSTEL</li>
+                        </ul>
 
                         <p class="h5 texto-azul">¿Qué documentación debo llevar para realizar los análisis?
                         </p>
@@ -337,7 +357,7 @@
                                 <p class="texto-invertido"><i class="texto-celeste fa fa-phone">&nbsp;&nbsp;</i>(0291) 459-9999</p>
                                 <p class="texto-invertido"><i class="texto-celeste fa fa-envelope-o">&nbsp;&nbsp;</i>laboratorios@iaca.com.ar</p>
 
-                                <p class="h6 texto-invertido">Sede San Martín</p>
+                                <p class="h6 texto-invertido"><strong>Sede San Martín</strong></p>
                                 <p class="texto-invertido"><i class="texto-celeste fa fa-map-marker">&nbsp;&nbsp;</i>San Martín 68</p>
                                 <p class="texto-invertido"><i class="texto-celeste fa fa-clock-o">&nbsp;&nbsp;</i>
                                     <strong>Horario de atención:</strong>
@@ -348,15 +368,15 @@
                                     de 7:00 a 13:00 hs.
                                 </p>
 
-                                <p class="h6 texto-invertido">Sede Rodríguez</p>
+                                <p class="h6 texto-invertido"><strong>Sede Rodríguez</strong></p>
                                 <p class="texto-invertido"><i class="texto-celeste fa fa-map-marker">&nbsp;&nbsp;</i> Rodríguez 702</p>
                                 <p class="texto-invertido"><i class="texto-celeste fa fa-clock-o">&nbsp;&nbsp;</i>
                                     <strong>Horario de atención:</strong>
                                     <br/>
                                     Lunes a Viernes <br/>
-                                    de 7:00 a 20:00 hs. <br/>
+                                    de 7:00 a 18:00 hs. <br/>
                                     Sábado <br/>
-                                    de 7:00 a 13:00 hs.
+                                    de 7:00 a 12:00 hs.
                                 </p>
 
 

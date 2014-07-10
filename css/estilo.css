@@ -2571,11 +2571,30 @@ hr {
 Browse Happy prompt
 ========================================================================== */
 
+.browsehappy--bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #28427e;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  opacity: 0.85;
+  z-index: 1000;
+}
+
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+  position: fixed;
+  width: 500px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  margin: -120px 0 0 -250px;
+  font-size: 1.3em;
+  background: #dadeec;
+  color: #112535;
+  padding: 2em;
+  z-index: 1001;
 }
 
 /** Puntas decorativas svg **/
