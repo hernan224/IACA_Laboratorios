@@ -38,7 +38,7 @@ $h2:      2.375;
 $h3:      1.75;
 $h4:      1.3125;
 $h5:      $h4;
-$h6:      $p;
+$h6:      1.125;
 
 
 $global-radius: 0;
@@ -164,7 +164,8 @@ $container-desktop:            ((940px + $grid-gutter-width)) !default;
 $container-md:                 $container-desktop !default;
 
 // Large screen / wide desktop
-$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
+//$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
+$container-large-desktop:      ((1000px + $grid-gutter-width)) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
 

@@ -116,6 +116,8 @@ main{
   }
 }
 
+
+
 /** slider **/
 
 .slider-control{
@@ -146,6 +148,12 @@ form{
 
     .contenedor_sede{
       display: inline-block;
+    }
+  }
+
+  .banner--app_movil{
+    .contenido--banner{
+      @include x-rem(padding, 2 1);
     }
   }
 }

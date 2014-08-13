@@ -8,7 +8,7 @@
 /** La empresa **/
 
 .empresa--intro{
-  @include x-rem(padding, 3);
+  @include x-rem(padding, 3 3 0 1.5);
 }
 
 /** Pacientes **/

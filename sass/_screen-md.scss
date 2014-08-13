@@ -46,6 +46,22 @@
   }
 }
 
+/** Home **/
+
+.front_page{
+  .banner--app_movil{
+    .contenido--banner{
+      @include x-rem(margin-top, 1);
+    }
+  }
+
+  .slider--noticias{
+    @include x-rem(margin-top, 4.5);
+  }
+}
+
+
+
 /** La empresa **/
 
 .empresa--intro{
@@ -90,7 +106,11 @@
 
 #direccion_general{
   .foto--profesional{
-    max-width: 100%
+    max-width: 85%;
+
+    &.r-gentilli{
+      margin: 0 0 0 auto;
+    }
   }
 }
 
